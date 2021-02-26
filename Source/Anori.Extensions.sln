@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuspec", "Nuspec", "{04C14F89-5860-4FD5-9CF1-72BCF44B5C68}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\nuspec\nuget\Anori.Extensions.nuspec = ..\..\nuspec\nuget\Anori.Extensions.nuspec
+		..\nuspec\nuget\Anori.Extensions.nuspec = ..\nuspec\nuget\Anori.Extensions.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{16AF07EF-7EBB-45CE-9653-4EA488DF2AA5}"
