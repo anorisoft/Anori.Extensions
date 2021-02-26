@@ -32,6 +32,7 @@ using System.Diagnostics;
 // ReSharper disable IntroduceOptionalParameters.Global
 // ReSharper disable MemberCanBeProtected.Global
 // ReSharper disable InconsistentNaming
+// ReSharper disable UnusedType.Global
 
 namespace JetBrains.Annotations
 {
@@ -501,7 +502,7 @@ namespace JetBrains.Annotations
 
     /// <summary>
     /// Specify the details of implicitly used symbol when it is marked
-    /// with <see cref="MeansImplicitUseAttribute"/> or <see cref="UsedImplicitlyAttribute"/>.
+    /// with <see cref="MeansImplicitUseAttribute" /> or <see cref="UsedImplicitlyAttribute" />.
     /// </summary>
     [Flags]
     internal enum ImplicitUseKindFlags
