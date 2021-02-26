@@ -14,5 +14,5 @@ Master branch status
 
 | | Stable | Pre-release |
 |:--:|:--:|:--:|
-|GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/anorisoft/Anori.Extensions.svg)](https://github.com/cake-contrib/Anori.Extensions/releases/latest)|
+|GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/anorisoft/Anori.Extensions.svg)](https://github.com/anorisoft/Anori.Extensions/releases/latest)|
 |NuGet|[![NuGet](https://img.shields.io/nuget/v/Anori.Extensions.svg)](https://www.nuget.org/packages/Anori.Extensions)|[![NuGet](https://img.shields.io/nuget/vpre/Anori.Extensions.svg)](https://www.nuget.org/packages/Anori.Extensions)|
