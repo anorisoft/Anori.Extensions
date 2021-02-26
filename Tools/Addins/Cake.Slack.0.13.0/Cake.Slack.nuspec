@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Cake.Slack</id>
+    <version>0.13.0</version>
+    <authors>WCOM AB</authors>
+    <owners>WCOM AB, cake-contrib</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/cake-contrib/Cake.Slack/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
+    <description>Provides Slack aliases (extension methods on Cake context) for Cake.</description>
+    <summary>Provides Slack aliases (extension methods on Cake context) for Cake.</summary>
+    <copyright>Copyright (c) WCOM AB</copyright>
+    <tags>Cake, Script, Build, Slack</tags>
+  </metadata>
+</package>

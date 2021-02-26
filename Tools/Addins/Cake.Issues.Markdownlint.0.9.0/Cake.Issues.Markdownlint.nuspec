@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Cake.Issues.Markdownlint</id>
+    <version>0.9.0</version>
+    <title>Cake.Issues.Markdownlint</title>
+    <authors>BBT Software AG and contributors</authors>
+    <owners>bbtsoftware, pascalberger, cake-contrib</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <projectUrl>https://cakeissues.net/</projectUrl>
+    <description>The Markdownlint support for the Cake.Issues addin for Cake allows you to read issues logged by Markdownlint.
+
+This addin provides the aliases for reading Markdownlint issues and providing them to the Cake.Issues addin.
+It also requires the core Cake.Issues addin.
+
+There are also additional addins for generating reports or posting issues to pull requests.
+
+See the Project Site for an overview of the whole ecosystem of addins for working with issues in Cake scripts.</description>
+    <summary>Markdownlint support for the Cake.Issues addin for Cake Build Automation System</summary>
+    <releaseNotes>https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/0.9.0</releaseNotes>
+    <copyright>Copyright © BBT Software AG and contributors</copyright>
+    <tags>Cake Script Cake-Issues Cake-IssueProvider Linting Markdownlint</tags>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Issues.Markdownlint.git" />
+  </metadata>
+</package>

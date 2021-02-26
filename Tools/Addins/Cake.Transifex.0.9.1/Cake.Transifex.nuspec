@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cake.Transifex</id>
+    <version>0.9.1</version>
+    <title>Transifex Cake addin</title>
+    <authors>Kim J. Nordmo,Cake Contributors</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <projectUrl>https://cake-contrib.github.io/Cake.Transifex/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics@49c3b71def749b86416d773f1ead0c0da2d590ea/png/cake-contrib-medium.png</iconUrl>
+    <description>Cake.Transifex is a addin for the Cake Build script adding support for working with the localization service Transifex.
+This addin requires that the transifex client is already installed and is available as `tx`.
+To install the transifex client, install python, then run `pip install transifex-client`.</description>
+    <releaseNotes>All release notes for Cake.Transifex can be found on our GitHub release page - https://github.com/cake-contrib/Cake.Transifex/releases/tag/0.9.1</releaseNotes>
+    <copyright>Copyright 2017-2020 - Kim J. Nordmo</copyright>
+    <tags>Cake Cake Script Build Transifex Localization</tags>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Transifex.git" commit="18b0f3fca272c2ab85f08b53a1d183516eb2400b" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

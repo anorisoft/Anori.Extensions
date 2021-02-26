@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Email</id>
+    <version>0.10.0</version>
+    <title>Cake.Email</title>
+    <authors>Jericho</authors>
+    <owners>Jericho</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>PackageIcon.png</icon>
+    <projectUrl>https://github.com/cake-contrib/Cake.Email/</projectUrl>
+    <description>Cake Build addin to provide Aliases for sending emails via SMTP.</description>
+    <copyright>Copyright (c) Cake Contributions 2016 - Present</copyright>
+    <tags>Cake Script Build Email</tags>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Email.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Cake.Email.Common" version="0.4.2" exclude="Build,Analyzers" />
+        <dependency id="MailKit" version="2.8.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
