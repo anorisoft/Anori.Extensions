@@ -9,13 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{C418E4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items", "{FE2E33F9-2210-450B-9955-08CC7E401186}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\.appveyor.yml = ..\..\.appveyor.yml
-		..\..\LICENSE = ..\..\LICENSE
-		..\..\README.md = ..\..\README.md
-		..\..\recipe.cake = ..\..\recipe.cake
-		..\..\Run.cake = ..\..\Run.cake
-		..\..\Run.cmd = ..\..\Run.cmd
-		..\..\RunAppVeyor.cmd = ..\..\RunAppVeyor.cmd
+		..\.appveyor.yml = ..\.appveyor.yml
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		..\build.ps1 = ..\build.ps1
+		..\build.sh = ..\build.sh
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		..\recipe.cake = ..\recipe.cake
+		..\Run.cake = ..\Run.cake
+		..\Run.cmd = ..\Run.cmd
+		..\RunCI.cmd = ..\RunCI.cmd
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuspec", "Nuspec", "{04C14F89-5860-4FD5-9CF1-72BCF44B5C68}"
