@@ -4,6 +4,9 @@ using JetBrains.Annotations;
 
 namespace Anori.Extensions
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class ValueTypeExtensions
     {
         /// <summary>
