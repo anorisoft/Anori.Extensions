@@ -23,6 +23,7 @@ SOFTWARE. */
 using System;
 using System.Diagnostics;
 // ReSharper disable InheritdocConsiderUsage
+// ReSharper disable CheckNamespace
 
 #pragma warning disable 1591
 // ReSharper disable UnusedMember.Global
