@@ -11,7 +11,8 @@ BuildParameters.SetParameters(
     repositoryName: "Anori.Extensions",
     appVeyorAccountName: "anorisoft",
     shouldGenerateDocumentation: false,
-    shouldRunDupFinder: false);
+    shouldRunDupFinder: false,
+	nuspecFilePath: "./Source/Anori.Extensions.nuspec");
 
 BuildParameters.PrintParameters(Context);
 
