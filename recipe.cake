@@ -14,7 +14,7 @@ BuildParameters.SetParameters(
     shouldRunDupFinder: false,
 	nuspecFilePath: "./Source/Anori.Extensions.nuspec",
     shouldRunCodecov: false,
-    shouldRunCoverlet: true);
+    shouldRunCoveralls: true);
 
 BuildParameters.PrintParameters(Context);
 
