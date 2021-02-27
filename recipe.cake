@@ -1,4 +1,4 @@
-#load nuget:?package=Cake.Recipe&version=2.1.0
+#load nuget:?package=Cake.Recipe&version=2.2.0
 
 Environment.SetVariableNames();
 
@@ -12,9 +12,9 @@ BuildParameters.SetParameters(
     appVeyorAccountName: "anorisoft",
     shouldGenerateDocumentation: false,
     shouldRunDupFinder: false,
-	nuspecFilePath: "./Source/Anori.Extensions.nuspec",
-    shouldRunCodecov: false,
-    shouldRunCoveralls: true);
+	shouldRunCodecov: false,
+    shouldRunCoveralls: true,
+    shouldRunDotNetCorePack: true);
 
 BuildParameters.PrintParameters(Context);
 
