@@ -6,5 +6,16 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Anorisoft.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
+    <PackageIcon>Anorisoft.png</PackageIcon>
+    <Description>AnoriSoft Extensions</Description>
+    <Company>AnoriSoft</Company>
+    <Authors>Martin Egli</Authors>
+    <PackageTags>Extensions</PackageTags>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Anori.WinUI.CommandBuilder\Source\Anorisoft.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>

@@ -65,7 +65,7 @@ namespace Anori.Extensions
         }
 
         /// <summary>
-        ///     Elements at or null.
+        /// Get element at index or is no element return null.
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
