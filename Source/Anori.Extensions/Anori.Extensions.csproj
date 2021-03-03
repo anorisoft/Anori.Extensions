@@ -11,9 +11,11 @@
     <Company>AnoriSoft</Company>
     <Authors>Martin Egli</Authors>
     <PackageTags>Extensions</PackageTags>
+    <Copyright>Copyright (c) AnoriSoft</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\..\Anori.WinUI.CommandBuilder\Source\Anorisoft.png">
+    <None Include="..\Anorisoft.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
