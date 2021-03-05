@@ -17,13 +17,15 @@ namespace Anori.Extensions
     public static class EnumerableExtensions
     {
         /// <summary>
-        ///     Values at or null.
+        /// Values at or null.
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
-        /// <returns>The value or null.</returns>
-        /// <exception cref="ArgumentNullException">source is null.</exception>
+        /// <returns>
+        /// The value or null.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">Source is null.</exception>
         public static TSource? ValueAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
             where TSource : struct
         {
