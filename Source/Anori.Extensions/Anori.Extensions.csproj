@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <LangVersion>8.0</LangVersion>
     <Configurations>Debug;Release;Debug Submodules</Configurations>
     <SignAssembly>true</SignAssembly>
@@ -13,6 +13,16 @@
     <PackageTags>Extensions</PackageTags>
     <Copyright>Copyright (c) AnoriSoft</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Git\Anori.Extensions2\Source\Anori.Extensions\Anori.Extensions.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Git\Anori.Extensions2\Source\Anori.Extensions\Anori.Extensions.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Submodules|AnyCPU'">
+    <DocumentationFile>D:\Git\Anori.Extensions2\Source\Anori.Extensions\Anori.Extensions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\Anorisoft.png">
@@ -21,9 +31,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="3.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Scripting" Version="3.9.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-</Project>
+  </ItemGroup></Project>
