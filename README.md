@@ -9,6 +9,7 @@ Anori.Extensions contains various extensions for specific system types of C#. Th
 ## Donate
 
 Good software development is not easy, with a donation you can ensure the preservation of good OpenSource projects.
+
 [![Donate](https://img.shields.io/badge/donate-PayPal-yellow.svg)](https://www.paypal.me/AnoriSoft/10)
 
 ## Information
