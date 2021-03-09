@@ -27,7 +27,7 @@ Master branch status
 |:--:|:--:|
 |[![Build status](https://ci.appveyor.com/api/projects/status/d6c2n49sol9mcl52/branch/develop?svg=true)](https://ci.appveyor.com/project/anorisoft/anori-extensions/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/d6c2n49sol9mcl52/branch/master?svg=true)](https://ci.appveyor.com/project/anorisoft/anori-extensions/branch/master)|
 
-##Maintainability
+## Maintainability
 
 |Master|
 |:--:|
