@@ -1,29 +1,29 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="EnumerableExtensions.cs" company="Anori Soft">
-// Copyright (c) Anori Soft. All rights reserved.
+// <copyright file="EnumerableExtensions.cs" company="Anorisoft">
+// Copyright (c) bfa solutions ltd. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
 namespace Anori.Extensions
 {
+    using JetBrains.Annotations;
+
     using System;
     using System.Collections.Generic;
 
-    using JetBrains.Annotations;
-
     /// <summary>
-    /// Enumerable Extensions.
+    ///     Enumerable Extensions.
     /// </summary>
     public static class EnumerableExtensions
     {
         /// <summary>
-        /// Values at or null.
+        ///     Values at or null.
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
         /// <returns>
-        /// The value or null.
+        ///     The value or null.
         /// </returns>
         /// <exception cref="ArgumentNullException">Source is null.</exception>
         public static TSource? ValueAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)

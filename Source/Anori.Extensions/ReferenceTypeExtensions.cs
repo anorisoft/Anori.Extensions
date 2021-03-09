@@ -4,12 +4,16 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-using JetBrains.Annotations;
-using System;
-using System.Collections.Generic;
-
 namespace Anori.Extensions
 {
+    using System;
+    using System.Collections.Generic;
+
+    using JetBrains.Annotations;
+
+    /// <summary>
+    ///     Reference Type Extensions.
+    /// </summary>
     public static class ReferenceTypeExtensions
     {
         /// <summary>
@@ -21,16 +25,23 @@ namespace Anori.Extensions
         /// <returns>
         ///     Result of ElementAtOrNull as TSource.
         /// </returns>
-        /// <exception cref="ArgumentNullException">source</exception>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
         public static TSource ElementAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
             where TSource : class
         {
-            if (source == null) throw new ArgumentNullException(nameof(source));
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
             if (index >= 0)
             {
                 if (source is IList<TSource> list)
                 {
-                    if (index < list.Count) return list[index];
+                    if (index < list.Count)
+                    {
+                        return list[index];
+                    }
                 }
                 else
                 {
@@ -42,38 +53,54 @@ namespace Anori.Extensions
         }
 
         /// <summary>
-        ///     Elements at or null.
+        /// Elements at or null.
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException">source</exception>
+        /// <returns>
+        /// Result of ElementAtOrNull as TSource.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
         public static TSource ElementAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : class
         {
-            if (source == null) throw new ArgumentNullException(nameof(source));
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
 
-            if (index >= 0 && index < source.Count) return source[index];
+            if (index >= 0 && index < source.Count)
+            {
+                return source[index];
+            }
 
             return null;
         }
 
         /// <summary>
-        ///     Gets the value or null.
+        /// Gets the value or null.
         /// </summary>
         /// <typeparam name="TKey">The type of the key.</typeparam>
         /// <typeparam name="TValue">The type of the value.</typeparam>
         /// <param name="dictionary">The dictionary.</param>
         /// <param name="key">The key.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException">dictionary</exception>
+        /// <returns>
+        /// Result of GetValueOrNull as TValue.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">dictionary is null.</exception>
         public static TValue GetValueOrNull<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key)
             where TValue : class
         {
-            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
+            if (dictionary == null)
+            {
+                throw new ArgumentNullException(nameof(dictionary));
+            }
 
-            if (dictionary.TryGetValue(key, out var value)) return value;
+            if (dictionary.TryGetValue(key, out var value))
+            {
+                return value;
+            }
 
             return null;
         }
@@ -93,9 +120,15 @@ namespace Anori.Extensions
             using var e = source.GetEnumerator();
             while (true)
             {
-                if (!e.MoveNext()) break;
+                if (!e.MoveNext())
+                {
+                    break;
+                }
 
-                if (index == 0) return e.Current;
+                if (index == 0)
+                {
+                    return e.Current;
+                }
 
                 index--;
             }
