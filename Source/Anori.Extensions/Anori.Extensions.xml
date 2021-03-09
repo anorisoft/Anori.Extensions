@@ -737,13 +737,15 @@
         </member>
         <member name="M:Anori.Extensions.EnumerableExtensions.ValueAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
             <summary>
-                Values at or null.
+            Values at or null.
             </summary>
             <typeparam name="TSource">The type of the source.</typeparam>
             <param name="source">The source.</param>
             <param name="index">The index.</param>
-            <returns>The value or null.</returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+            <returns>
+            The value or null.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">Source is null.</exception>
         </member>
         <member name="M:Anori.Extensions.EnumerableExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
             <summary>
@@ -755,7 +757,12 @@
             <returns>The value or null.</returns>
             <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
-        <member name="M:Anori.Extensions.EnumerableExtensions.ValueAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+        <member name="T:Anori.Extensions.ListExtensions">
+            <summary>
+            List Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Extensions.ListExtensions.ValueAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
             <summary>
                 Values at or null.
             </summary>
@@ -763,9 +770,9 @@
             <param name="source">The source.</param>
             <param name="index">The index.</param>
             <returns>The value or null.</returns>
-            <exception cref="T:System.ArgumentNullException">source</exception>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
-        <member name="M:Anori.Extensions.EnumerableExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+        <member name="M:Anori.Extensions.ListExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
             <summary>
                 References at or null.
             </summary>
@@ -777,17 +784,19 @@
         </member>
         <member name="M:Anori.Extensions.ReferenceTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
             <summary>
-            Elements at or null.
+                Elements at or null.
             </summary>
             <typeparam name="TSource">The type of the source.</typeparam>
             <param name="source">The source.</param>
             <param name="index">The index.</param>
-            <returns></returns>
+            <returns>
+                Result of ElementAtOrNull as TSource.
+            </returns>
             <exception cref="T:System.ArgumentNullException">source</exception>
         </member>
         <member name="M:Anori.Extensions.ReferenceTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
             <summary>
-            Elements at or null.
+                Elements at or null.
             </summary>
             <typeparam name="TSource">The type of the source.</typeparam>
             <param name="source">The source.</param>
@@ -797,7 +806,7 @@
         </member>
         <member name="M:Anori.Extensions.ReferenceTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
             <summary>
-            Gets the value or null.
+                Gets the value or null.
             </summary>
             <typeparam name="TKey">The type of the key.</typeparam>
             <typeparam name="TValue">The type of the value.</typeparam>
@@ -805,6 +814,17 @@
             <param name="key">The key.</param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException">dictionary</exception>
+        </member>
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.CurrentFromEnumerator``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                Currents from enumerator.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
+            </returns>
         </member>
         <member name="M:Anori.Extensions.TypeExtensions.IsNullable(System.Reflection.TypeInfo)">
             <summary>
@@ -837,7 +857,7 @@
         </member>
         <member name="T:Anori.Extensions.ValueTypeExtensions">
             <summary>
-            ValueType Extensions.
+                ValueType Extensions.
             </summary>
         </member>
         <member name="M:Anori.Extensions.ValueTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
@@ -852,13 +872,15 @@
         </member>
         <member name="M:Anori.Extensions.ValueTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
             <summary>
-            Get element at index or is no element return null.
+                Get element at index or is no element return null.
             </summary>
             <typeparam name="TSource">The type of the source.</typeparam>
             <param name="source">The source.</param>
             <param name="index">The index.</param>
-            <returns></returns>
-            <exception cref="T:System.ArgumentNullException">source</exception>
+            <returns>
+                Result of ElementAtOrNull as Nullable{TSource}.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
         <member name="M:Anori.Extensions.ValueTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
             <summary>
@@ -870,6 +892,17 @@
             <param name="key">The key.</param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException">dictionary</exception>
+        </member>
+        <member name="M:Anori.Extensions.ValueTypeExtensions.CurrentFromEnumerator``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                Currents from enumerator.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
+            </returns>
         </member>
     </members>
 </doc>
