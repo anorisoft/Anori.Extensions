@@ -29,6 +29,6 @@ Master branch status
 
 ##Maintainability
 
-|Develop|Master|
-|:--:|:--:|
-|[![Maintainability](https://api.codeclimate.com/v1/badges/04a0256f4a3d6fdf3d27/maintainability)](https://codeclimate.com/github/anorisoft/Anori.Extensions/branch/develop/maintainability)|[![Maintainability](https://api.codeclimate.com/v1/badges/04a0256f4a3d6fdf3d27/maintainability)](https://codeclimate.com/github/anorisoft/Anori.Extensions/branch/master/maintainability)|
+|Master|
+|:--:|
+|[![Maintainability](https://api.codeclimate.com/v1/badges/04a0256f4a3d6fdf3d27/maintainability)](https://codeclimate.com/github/anorisoft/Anori.Extensions/maintainability)|
