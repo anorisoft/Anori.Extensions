@@ -63,7 +63,7 @@ namespace Anori.Extensions
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
         /// <returns>The value or null.</returns>
-        /// <exception cref="ArgumentNullException">source</exception>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
         public static TSource? ValueAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : struct
         {

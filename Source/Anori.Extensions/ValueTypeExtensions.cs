@@ -1,18 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ValueTypeExtensions.cs" company="Anori Soft">
-// Copyright (c) Anori Soft. All rights reserved.
+// <copyright file="ValueTypeExtensions.cs" company="AnoriSoft">
+// Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
+using System;
+using System.Collections.Generic;
+using JetBrains.Annotations;
+
 namespace Anori.Extensions
 {
-    using System;
-    using System.Collections.Generic;
-
-    using JetBrains.Annotations;
-
     /// <summary>
-    /// ValueType Extensions.
+    ///     ValueType Extensions.
     /// </summary>
     public static class ValueTypeExtensions
     {
@@ -27,37 +26,17 @@ namespace Anori.Extensions
         public static TSource? ElementAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
             where TSource : struct
         {
-            if (source == null)
-            {
-                throw new ArgumentNullException(nameof(source));
-            }
+            if (source == null) throw new ArgumentNullException(nameof(source));
 
             if (index >= 0)
             {
                 if (source is IList<TSource> list)
                 {
-                    if (index < list.Count)
-                    {
-                        return list[index];
-                    }
+                    if (index < list.Count) return list[index];
                 }
                 else
                 {
-                    using var e = source.GetEnumerator();
-                    while (true)
-                    {
-                        if (!e.MoveNext())
-                        {
-                            break;
-                        }
-
-                        if (index == 0)
-                        {
-                            return e.Current;
-                        }
-
-                        index--;
-                    }
+                    return CurrentFromEnumerator(source, index);
                 }
             }
 
@@ -65,25 +44,49 @@ namespace Anori.Extensions
         }
 
         /// <summary>
-        /// Get element at index or is no element return null.
+        ///     Currents from enumerator.
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException">source</exception>
+        /// <returns>
+        ///     Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
+        /// </returns>
+        private static TSource? CurrentFromEnumerator<TSource>(IEnumerable<TSource> source, int index)
+            where TSource : struct
+        {
+            using var e = source.GetEnumerator();
+            while (true)
+            {
+                if (!e.MoveNext()) break;
+
+                if (index == 0)
+                {
+                    return e.Current;
+                }
+
+                index--;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        ///     Get element at index or is no element return null.
+        /// </summary>
+        /// <typeparam name="TSource">The type of the source.</typeparam>
+        /// <param name="source">The source.</param>
+        /// <param name="index">The index.</param>
+        /// <returns>
+        ///     Result of ElementAtOrNull as Nullable{TSource}.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
         public static TSource? ElementAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : struct
         {
-            if (source == null)
-            {
-                throw new ArgumentNullException(nameof(source));
-            }
+            if (source == null) throw new ArgumentNullException(nameof(source));
 
-            if (index >= 0 && index < source.Count)
-            {
-                return source[index];
-            }
+            if (index >= 0 && index < source.Count) return source[index];
 
             return null;
         }
@@ -102,15 +105,9 @@ namespace Anori.Extensions
             TKey key)
             where TValue : struct
         {
-            if (dictionary == null)
-            {
-                throw new ArgumentNullException(nameof(dictionary));
-            }
+            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
 
-            if (dictionary.TryGetValue(key, out var value))
-            {
-                return value;
-            }
+            if (dictionary.TryGetValue(key, out var value)) return value;
 
             return null;
         }
