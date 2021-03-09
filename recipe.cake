@@ -10,7 +10,7 @@ BuildParameters.SetParameters(
     repositoryOwner: "anorisoft",
     repositoryName: "Anori.Extensions",
     appVeyorAccountName: "anorisoft",
-    shouldGenerateDocumentation: false,
+    shouldGenerateDocumentation: true,
     shouldRunDupFinder: false,
 	shouldRunCodecov: false,
     shouldRunCoveralls: true,
