@@ -32,40 +32,15 @@ namespace Anori.Extensions
             {
                 if (source is IList<TSource> list)
                 {
-                    if (index < list.Count) return list[index];
+                    if (index < list.Count)
+                    {
+                        return list[index];
+                    }
                 }
                 else
                 {
                     return CurrentFromEnumerator(source, index);
                 }
-            }
-
-            return null;
-        }
-
-        /// <summary>
-        ///     Currents from enumerator.
-        /// </summary>
-        /// <typeparam name="TSource">The type of the source.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="index">The index.</param>
-        /// <returns>
-        ///     Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
-        /// </returns>
-        private static TSource? CurrentFromEnumerator<TSource>(IEnumerable<TSource> source, int index)
-            where TSource : struct
-        {
-            using var e = source.GetEnumerator();
-            while (true)
-            {
-                if (!e.MoveNext()) break;
-
-                if (index == 0)
-                {
-                    return e.Current;
-                }
-
-                index--;
             }
 
             return null;
@@ -108,6 +83,31 @@ namespace Anori.Extensions
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
 
             if (dictionary.TryGetValue(key, out var value)) return value;
+
+            return null;
+        }
+
+        /// <summary>
+        ///     Currents from enumerator.
+        /// </summary>
+        /// <typeparam name="TSource">The type of the source.</typeparam>
+        /// <param name="source">The source.</param>
+        /// <param name="index">The index.</param>
+        /// <returns>
+        ///     Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
+        /// </returns>
+        private static TSource? CurrentFromEnumerator<TSource>(IEnumerable<TSource> source, int index)
+            where TSource : struct
+        {
+            using var e = source.GetEnumerator();
+            while (true)
+            {
+                if (!e.MoveNext()) break;
+
+                if (index == 0) return e.Current;
+
+                index--;
+            }
 
             return null;
         }
