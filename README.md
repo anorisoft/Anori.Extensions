@@ -21,3 +21,9 @@ Maintainability
 |:--:|:--:|:--:|
 |GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/anorisoft/Anori.Extensions.svg)](https://github.com/anorisoft/Anori.Extensions/releases/latest)|
 |NuGet|[![NuGet](https://img.shields.io/nuget/v/Anori.Extensions.svg)](https://www.nuget.org/packages/Anori.Extensions)|[![NuGet](https://img.shields.io/nuget/vpre/Anori.Extensions.svg)](https://www.nuget.org/packages/Anori.Extensions)|
+
+## Build Status
+
+|Develop|Master|
+|:--:|:--:|
+|[![Build status](https://ci.appveyor.com/api/projects/status/d6c2n49sol9mcl52/branch/develop?svg=true)](https://ci.appveyor.com/project/anorisoft/anori-extensions/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/d6c2n49sol9mcl52/branch/develop?svg=true)](https://ci.appveyor.com/project/anorisoft/anori-extensions/branch/master)|
