@@ -3,8 +3,10 @@ Collection of commen extensions.
 
 Anori.Extensions contains various extensions for specific system types of C#. They simplified and extended usage of the types.
 
+## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/anorisoft/Anori.Extensions/blob/master/LICENSE)
+
 
 ## Donate
 
