@@ -1,12 +1,13 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ValueTypeExtensions.cs" company="AnoriSoft">
-// Copyright (c) AnoriSoft. All rights reserved.
+// <copyright file="ValueTypeExtensions.cs" company="Anorisoft">
+// Copyright (c) bfa solutions ltd. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
+using JetBrains.Annotations;
+
 using System;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 
 namespace Anori.Extensions
 {
@@ -26,7 +27,10 @@ namespace Anori.Extensions
         public static TSource? ElementAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
             where TSource : struct
         {
-            if (source == null) throw new ArgumentNullException(nameof(source));
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
 
             if (index >= 0)
             {
@@ -59,9 +63,15 @@ namespace Anori.Extensions
         public static TSource? ElementAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : struct
         {
-            if (source == null) throw new ArgumentNullException(nameof(source));
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
 
-            if (index >= 0 && index < source.Count) return source[index];
+            if (index >= 0 && index < source.Count)
+            {
+                return source[index];
+            }
 
             return null;
         }
@@ -80,9 +90,15 @@ namespace Anori.Extensions
             TKey key)
             where TValue : struct
         {
-            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
+            if (dictionary == null)
+            {
+                throw new ArgumentNullException(nameof(dictionary));
+            }
 
-            if (dictionary.TryGetValue(key, out var value)) return value;
+            if (dictionary.TryGetValue(key, out var value))
+            {
+                return value;
+            }
 
             return null;
         }
@@ -102,9 +118,15 @@ namespace Anori.Extensions
             using var e = source.GetEnumerator();
             while (true)
             {
-                if (!e.MoveNext()) break;
+                if (!e.MoveNext())
+                {
+                    break;
+                }
 
-                if (index == 0) return e.Current;
+                if (index == 0)
+                {
+                    return e.Current;
+                }
 
                 index--;
             }
