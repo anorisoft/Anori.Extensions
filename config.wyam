@@ -1,2 +1,2 @@
-System.Globalization.CultureInfo.DefaultThreadCurrentCulture
-    = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
+System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
+#n Wyam.Markdown

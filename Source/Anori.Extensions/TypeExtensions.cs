@@ -1,19 +1,29 @@
-﻿using System;
-using System.Reflection;
-using JetBrains.Annotations;
+﻿// -----------------------------------------------------------------------
+// <copyright file="TypeExtensions.cs" company="AnoriSoft">
+// Copyright (c) AnoriSoft. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 namespace Anori.Extensions
 {
+    using System;
+    using System.Reflection;
+
+    using JetBrains.Annotations;
+
+    /// <summary>
+    /// Type Extensions.
+    /// </summary>
     public static class TypeExtensions
     {
         /// <summary>
-        /// Determines whether this instance is nullable.
+        ///     Determines whether this instance is nullable.
         /// </summary>
         /// <param name="genericTypeInfo">The generic type information.</param>
         /// <returns>
-        ///   <c>true</c> if the specified generic type information is nullable; otherwise, <c>false</c>.
+        ///     <c>true</c> if the specified generic type information is nullable; otherwise, <c>false</c>.
         /// </returns>
-        /// <exception cref="ArgumentNullException">genericTypeInfo</exception>
+        /// <exception cref="ArgumentNullException">genericTypeInfo is null.</exception>
         public static bool IsNullable([NotNull] this TypeInfo genericTypeInfo)
         {
             if (genericTypeInfo == null)
@@ -25,13 +35,13 @@ namespace Anori.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance is nullable.
+        ///     Determines whether this instance is nullable.
         /// </summary>
         /// <param name="type">The type.</param>
         /// <returns>
-        ///   <c>true</c> if the specified type is nullable; otherwise, <c>false</c>.
+        ///     <c>true</c> if the specified type is nullable; otherwise, <c>false</c>.
         /// </returns>
-        /// <exception cref="ArgumentNullException">type</exception>
+        /// <exception cref="ArgumentNullException">type is null.</exception>
         public static bool IsNullable([NotNull] this Type type)
         {
             if (type == null)
@@ -43,11 +53,11 @@ namespace Anori.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance is nullable.
+        ///     Determines whether this instance is nullable.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">Type.</typeparam>
         /// <returns>
-        ///   <c>true</c> if this instance is nullable; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is nullable; otherwise, <c>false</c>.
         /// </returns>
         public static bool IsNullable<T>()
         {
