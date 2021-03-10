@@ -31,6 +31,7 @@ Good software development is not easy, with a donation you can ensure the preser
 
 ## Maintainability
 
+
 |Master|
 |:--:|
 |[![Maintainability](https://api.codeclimate.com/v1/badges/04a0256f4a3d6fdf3d27/maintainability)](https://codeclimate.com/github/anorisoft/Anori.Extensions/maintainability)|

@@ -59,7 +59,7 @@ namespace Anori.Extensions.UnitTests
             var list = new List<int> { 0, 1, 2, 3 };
 
             var actual = list.ValueAtOrNull(1);
-            Assert.AreEqual(1, actual);
+            Assert.AreEqual(2, actual);
         }
 
         [Test]
