@@ -16,13 +16,13 @@
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>\Anori.Extensions.xml</DocumentationFile>
+    <DocumentationFile>Anori.Extensions.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>\Anori.Extensions.xml</DocumentationFile>
+    <DocumentationFile>Anori.Extensions.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Submodules|AnyCPU'">
-    <DocumentationFile>\Anori.Extensions.xml</DocumentationFile>
+    <DocumentationFile>Anori.Extensions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\Anorisoft.png">

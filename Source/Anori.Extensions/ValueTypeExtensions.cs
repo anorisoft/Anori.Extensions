@@ -1,29 +1,31 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ValueTypeExtensions.cs" company="Anorisoft">
-// Copyright (c) bfa solutions ltd. All rights reserved.
+// <copyright file="ValueTypeExtensions.cs" company="AnoriSoft">
+// Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
-using JetBrains.Annotations;
-
-using System;
-using System.Collections.Generic;
-
 namespace Anori.Extensions
 {
+    using System;
+    using System.Collections.Generic;
+
+    using JetBrains.Annotations;
+
     /// <summary>
     ///     ValueType Extensions.
     /// </summary>
     public static class ValueTypeExtensions
     {
         /// <summary>
-        ///     Elements at or null.
+        /// Elements at or null.
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException">source</exception>
+        /// <returns>
+        /// Result of ElementAtOrNull as Nullable{TSource}.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
         public static TSource? ElementAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
             where TSource : struct
         {
@@ -77,14 +79,16 @@ namespace Anori.Extensions
         }
 
         /// <summary>
-        ///     Gets the value or null.
+        /// Gets the value or null.
         /// </summary>
         /// <typeparam name="TKey">The type of the key.</typeparam>
         /// <typeparam name="TValue">The type of the value.</typeparam>
         /// <param name="dictionary">The dictionary.</param>
         /// <param name="key">The key.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException">dictionary</exception>
+        /// <returns>
+        /// Result of GetValueOrNull as Nullable{TValue};.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">dictionary is null.</exception>
         public static TValue? GetValueOrNull<TKey, TValue>(
             [NotNull] this IDictionary<TKey, TValue> dictionary,
             TKey key)
