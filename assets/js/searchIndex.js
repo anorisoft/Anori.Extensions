@@ -39,28 +39,28 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"ReferenceTypeExtensions",
-            content:"ReferenceTypeExtensions",
+            title:"TypeExtensionsUnitTests",
+            content:"TypeExtensionsUnitTests",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
-            title:"ReferenceTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/TypeExtensionsUnitTests',
+            title:"TypeExtensionsUnitTests",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
+            title:"TypeExtensions",
+            content:"TypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
+            title:"TypeExtensions",
             description:""
         }
     );
@@ -81,28 +81,28 @@ var searchModule = function() {
     a(
         {
             id:3,
-            title:"TypeExtensionsUnitTests",
-            content:"TypeExtensionsUnitTests",
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/TypeExtensionsUnitTests',
-            title:"TypeExtensionsUnitTests",
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
             description:""
         }
     );
     a(
         {
             id:4,
-            title:"TypeExtensions",
-            content:"TypeExtensions",
+            title:"ReferenceTypeExtensions",
+            content:"ReferenceTypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
-            title:"TypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
+            title:"ReferenceTypeExtensions",
             description:""
         }
     );
