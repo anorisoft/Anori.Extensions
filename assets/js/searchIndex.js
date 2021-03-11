@@ -39,28 +39,28 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"TypeExtensionsUnitTests",
-            content:"TypeExtensionsUnitTests",
+            title:"ListExtensions",
+            content:"ListExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/TypeExtensionsUnitTests',
-            title:"TypeExtensionsUnitTests",
+            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
+            title:"ListExtensions",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"TypeExtensions",
-            content:"TypeExtensions",
+            title:"EnumerableExtensionsUnitTests",
+            content:"EnumerableExtensionsUnitTests",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
-            title:"TypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/EnumerableExtensionsUnitTests',
+            title:"EnumerableExtensionsUnitTests",
             description:""
         }
     );
@@ -81,20 +81,6 @@ var searchModule = function() {
     a(
         {
             id:3,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:4,
             title:"ReferenceTypeExtensions",
             content:"ReferenceTypeExtensions",
             description:'',
@@ -108,15 +94,57 @@ var searchModule = function() {
     );
     a(
         {
-            id:5,
-            title:"ListExtensions",
-            content:"ListExtensions",
+            id:4,
+            title:"TypeExtensions",
+            content:"TypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
-            title:"ListExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
+            title:"TypeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"ListExtensionsUnitTests",
+            content:"ListExtensionsUnitTests",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/ListExtensionsUnitTests',
+            title:"ListExtensionsUnitTests",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
+            title:"TypeExtensionsUnitTests",
+            content:"TypeExtensionsUnitTests",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/TypeExtensionsUnitTests',
+            title:"TypeExtensionsUnitTests",
             description:""
         }
     );
