@@ -39,6 +39,20 @@ var searchModule = function() {
     a(
         {
             id:0,
+            title:"ReferenceTypeExtensions",
+            content:"ReferenceTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
+            title:"ReferenceTypeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:1,
             title:"ValueTypeExtensions",
             content:"ValueTypeExtensions",
             description:'',
@@ -52,7 +66,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:1,
+            id:2,
             title:"TypeExtensions",
             content:"TypeExtensions",
             description:'',
@@ -61,20 +75,6 @@ var searchModule = function() {
         {
             url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
             title:"TypeExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"ListExtensions",
-            content:"ListExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
-            title:"ListExtensions",
             description:""
         }
     );
@@ -95,14 +95,14 @@ var searchModule = function() {
     a(
         {
             id:4,
-            title:"ReferenceTypeExtensions",
-            content:"ReferenceTypeExtensions",
+            title:"ListExtensions",
+            content:"ListExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
-            title:"ReferenceTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
+            title:"ListExtensions",
             description:""
         }
     );
