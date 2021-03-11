@@ -22,5 +22,14 @@ namespace Anori.Extensions.UnitTests
             var actual = list.ValueAtOrNull(10);
             Assert.AreEqual(null, actual);
         }
+
+        [TestMethod]
+        public void ListExtensions_ValueAtOrNull_in_Range_ReturnValue()
+        {
+            IEnumerable<int> list = new List<int> { 0, 1, 2, 3 };
+
+            var actual = list.ValueAtOrNull(1);
+            Assert.AreEqual(1, actual);
+        }
     }
 }
