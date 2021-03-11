@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Anori.Extensions\Anori.Extensions.csproj" />
+    <ProjectReference Include="..\..\Source\Anori.Extensions\Anori.Extensions.csproj" />
   </ItemGroup>
 
 </Project>
