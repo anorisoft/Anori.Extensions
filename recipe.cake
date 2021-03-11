@@ -12,7 +12,7 @@ BuildParameters.SetParameters(
     appVeyorAccountName: "anorisoft",
     shouldGenerateDocumentation: true,
     shouldRunDupFinder: false,
-	shouldRunCodecov: false,
+	shouldRunCodecov: true,
     shouldRunCoveralls: true,
     shouldRunDotNetCorePack: true);
 
@@ -22,8 +22,8 @@ ToolSettings.SetToolSettings(
     context: Context,
     dupFinderExcludePattern: new string[]
     {
-        BuildParameters.RootDirectoryPath + "/src/Cake.Issues.InspectCode*/**/*.AssemblyInfo.cs",
-        BuildParameters.RootDirectoryPath + "/src/Cake.Issues.InspectCode.Tests/**/*.cs"
+        BuildParameters.RootDirectoryPath + "/Source/Anori.Extensions*/**/*.AssemblyInfo.cs",
+        BuildParameters.RootDirectoryPath + "/Tests/**/*.cs"
     },
     testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* -[Cake.Issues]* -[Cake.Issues.Testing]* -[Shouldly]* -[DiffEngine]* -[EmptyFiles]*",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
