@@ -6,7 +6,7 @@ BuildParameters.SetParameters(
     context: Context,
     buildSystem: BuildSystem,
     sourceDirectoryPath: "./Source",
-    testDirectoryPath: "./Tests"
+    testDirectoryPath: "./Tests",
     title: "Anori.Extensions",
     repositoryOwner: "anorisoft",
     repositoryName: "Anori.Extensions",
