@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{16AF07EF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anori.Extensions.UnitTests", "Anori.Extensions.UnitTests\Anori.Extensions.UnitTests.csproj", "{9550699B-3FF9-4853-9569-9BF700FA93EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestProject", "..\Tests\MSTestProject\MSTestProject.csproj", "{33224564-89F3-48EB-8C0E-6B1E3C60DFB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestProject.UnitTests", "..\Tests\MSTestProject\MSTestProject.UnitTests.csproj", "{33224564-89F3-48EB-8C0E-6B1E3C60DFB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
