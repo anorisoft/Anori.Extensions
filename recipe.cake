@@ -25,7 +25,7 @@ ToolSettings.SetToolSettings(
         BuildParameters.RootDirectoryPath + "/Source/Anori.Extensions*/**/*.AssemblyInfo.cs",
         BuildParameters.RootDirectoryPath + "/Tests/**/*.cs"
     },
-    testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* -[Cake.Issues]* -[Cake.Issues.Testing]* -[Shouldly]* -[DiffEngine]* -[EmptyFiles]*",
+    testCoverageFilter: "+[*]* -[nunit.*]* -[*.Tests]* -[EmptyFiles]*",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
     testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
 

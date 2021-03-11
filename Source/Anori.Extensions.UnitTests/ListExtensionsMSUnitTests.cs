@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------
+// <copyright file="ListExtensionsMSUnitTests.cs" company="AnoriSoft">
+// Copyright (c) AnoriSoft. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace Anori.Extensions.UnitTests
+{
+    using System.Collections.Generic;
+
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
+    public class ListExtensionsMSUnitTests
+    {
+        [TestMethod]
+
+        public void ListExtensions_ValueAtOrNull_in_OutRange_ReturnNull()
+        {
+            var list = new List<int> { 0, 1, 2, 3 };
+
+            var actual = list.ValueAtOrNull(10);
+            Assert.AreEqual(null, actual);
+        }
+    }
+}
