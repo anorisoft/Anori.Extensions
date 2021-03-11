@@ -59,9 +59,6 @@ namespace Anori.Extensions
         /// <returns>
         ///     <c>true</c> if this instance is nullable; otherwise, <c>false</c>.
         /// </returns>
-        public static bool IsNullable<T>()
-        {
-            return typeof(T).IsNullable();
-        }
+        public static bool IsNullable<T>() => typeof(T).IsNullable();
     }
 }
