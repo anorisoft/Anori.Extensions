@@ -284,3 +284,6 @@ BuildArtifacts/
 .dotnet/
 .DS_Store
 /Tools
+config.wyam.dll
+config.wyam.hash
+config.wyam.packages.xml

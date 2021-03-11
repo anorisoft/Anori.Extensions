@@ -27,7 +27,12 @@ Good software development is not easy, with a donation you can ensure the preser
 |:--:|:--:|
 |[![Build status](https://ci.appveyor.com/api/projects/status/d6c2n49sol9mcl52/branch/develop?svg=true)](https://ci.appveyor.com/project/anorisoft/anori-extensions/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/d6c2n49sol9mcl52/branch/master?svg=true)](https://ci.appveyor.com/project/anorisoft/anori-extensions/branch/master)|
 
+## Coverage
+
+[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.Issues.InspectCode/badge.svg?branch=develop)](https://coveralls.io/github/cake-contrib/Cake.Issues.InspectCode?branch=develop)
+
 ## Maintainability
+
 
 |Master|
 |:--:|

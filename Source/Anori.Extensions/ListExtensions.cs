@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="EnumerableExtensions.cs" company="AnoriSoft">
+// <copyright file="ListExtensions.cs" company="AnoriSoft">
 // Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
@@ -12,9 +12,9 @@ namespace Anori.Extensions
     using JetBrains.Annotations;
 
     /// <summary>
-    ///     Enumerable Extensions.
+    ///     List Extensions.
     /// </summary>
-    public static class EnumerableExtensions
+    public static class ListExtensions
     {
         /// <summary>
         ///     Values at or null.
@@ -22,11 +22,9 @@ namespace Anori.Extensions
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <param name="source">The source.</param>
         /// <param name="index">The index.</param>
-        /// <returns>
-        ///     The value or null.
-        /// </returns>
-        /// <exception cref="ArgumentNullException">Source is null.</exception>
-        public static TSource? ValueAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
+        /// <returns>The value or null.</returns>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
+        public static TSource? ValueAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : struct
         {
             if (source == null)
@@ -51,7 +49,7 @@ namespace Anori.Extensions
             "Major Code Smell",
             "S4144:Methods should not have identical implementations",
             Justification = "Is not identical implementations. Oune is for Reference type and other value type")]
-        public static TSource ReferenceAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
+        public static TSource ReferenceAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : class
         {
             if (source == null)

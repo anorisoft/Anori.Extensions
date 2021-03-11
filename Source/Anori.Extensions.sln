@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items"
 		..\.gitignore = ..\.gitignore
 		..\build.ps1 = ..\build.ps1
 		..\build.sh = ..\build.sh
+		..\config.wyam = ..\config.wyam
 		..\LICENSE = ..\LICENSE
 		..\README.md = ..\README.md
 		..\recipe.cake = ..\recipe.cake
@@ -24,7 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{16AF07EF-7EBB-45CE-9653-4EA488DF2AA5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anori.Extensions.UnitTests", "Anori.Extensions.UnitTests\Anori.Extensions.UnitTests.csproj", "{9550699B-3FF9-4853-9569-9BF700FA93EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSTestProject.Unit.Tests", "..\Tests\MSTestProject.Unit.Tests\MSTestProject.Unit.Tests.csproj", "{A18D6B45-0723-4A0E-BFBF-B8E95E699D4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anori.Extensions.UnitTests", "..\Tests\Anori.Extensions.UnitTests\Anori.Extensions.UnitTests.csproj", "{7D7B90CF-6FA9-47B5-982A-DDD7BEC6057D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,17 +39,22 @@ Global
 		{E8C9016C-85FB-4364-9857-B8902E7EAD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8C9016C-85FB-4364-9857-B8902E7EAD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8C9016C-85FB-4364-9857-B8902E7EAD6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9550699B-3FF9-4853-9569-9BF700FA93EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9550699B-3FF9-4853-9569-9BF700FA93EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9550699B-3FF9-4853-9569-9BF700FA93EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9550699B-3FF9-4853-9569-9BF700FA93EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18D6B45-0723-4A0E-BFBF-B8E95E699D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18D6B45-0723-4A0E-BFBF-B8E95E699D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18D6B45-0723-4A0E-BFBF-B8E95E699D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18D6B45-0723-4A0E-BFBF-B8E95E699D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D7B90CF-6FA9-47B5-982A-DDD7BEC6057D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7B90CF-6FA9-47B5-982A-DDD7BEC6057D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7B90CF-6FA9-47B5-982A-DDD7BEC6057D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7B90CF-6FA9-47B5-982A-DDD7BEC6057D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E8C9016C-85FB-4364-9857-B8902E7EAD6B} = {C418E492-E007-414D-A5BE-F1A7FFEAA30E}
-		{9550699B-3FF9-4853-9569-9BF700FA93EE} = {16AF07EF-7EBB-45CE-9653-4EA488DF2AA5}
+		{A18D6B45-0723-4A0E-BFBF-B8E95E699D4A} = {16AF07EF-7EBB-45CE-9653-4EA488DF2AA5}
+		{7D7B90CF-6FA9-47B5-982A-DDD7BEC6057D} = {16AF07EF-7EBB-45CE-9653-4EA488DF2AA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9716CC8A-9323-4198-8AA6-CAC91BB86419}
