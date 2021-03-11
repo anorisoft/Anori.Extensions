@@ -39,34 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"ListExtensions",
-            content:"ListExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
-            title:"ListExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"EnumerableExtensionsUnitTests",
-            content:"EnumerableExtensionsUnitTests",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/EnumerableExtensionsUnitTests',
-            title:"EnumerableExtensionsUnitTests",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
             title:"EnumerableExtensions",
             content:"EnumerableExtensions",
             description:'',
@@ -80,15 +52,43 @@ var searchModule = function() {
     );
     a(
         {
-            id:3,
-            title:"ReferenceTypeExtensions",
-            content:"ReferenceTypeExtensions",
+            id:1,
+            title:"ListExtensions",
+            content:"ListExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
-            title:"ReferenceTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
+            title:"ListExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
+            title:"EnumerableExtensionsUnitTests",
+            content:"EnumerableExtensionsUnitTests",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/EnumerableExtensionsUnitTests',
+            title:"EnumerableExtensionsUnitTests",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
             description:""
         }
     );
@@ -109,28 +109,28 @@ var searchModule = function() {
     a(
         {
             id:5,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
+            title:"ListExtensionsMSUnitTests",
+            content:"ListExtensionsMSUnitTests",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/ListExtensionsMSUnitTests',
+            title:"ListExtensionsMSUnitTests",
             description:""
         }
     );
     a(
         {
             id:6,
-            title:"ListExtensionsUnitTests",
-            content:"ListExtensionsUnitTests",
+            title:"ReferenceTypeExtensions",
+            content:"ReferenceTypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/ListExtensionsUnitTests',
-            title:"ListExtensionsUnitTests",
+            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
+            title:"ReferenceTypeExtensions",
             description:""
         }
     );
@@ -145,6 +145,20 @@ var searchModule = function() {
         {
             url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/TypeExtensionsUnitTests',
             title:"TypeExtensionsUnitTests",
+            description:""
+        }
+    );
+    a(
+        {
+            id:8,
+            title:"ListExtensionsUnitTests",
+            content:"ListExtensionsUnitTests",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions.UnitTests/ListExtensionsUnitTests',
+            title:"ListExtensionsUnitTests",
             description:""
         }
     );
