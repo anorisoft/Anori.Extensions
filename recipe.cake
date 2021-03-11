@@ -26,7 +26,7 @@ ToolSettings.SetToolSettings(
         BuildParameters.RootDirectoryPath + "/Source/Anori.Extensions*/**/*.AssemblyInfo.cs",
         BuildParameters.RootDirectoryPath + "/Tests/**/*.cs"
     },
-    testCoverageFilter: "+[*]* -[nunit.*]* -[*.Tests]* -[EmptyFiles]*",
+    testCoverageFilter: "+[*]* -[NUnit*]* -[*.Tests]* -[EmptyFiles]*",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
     testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
 

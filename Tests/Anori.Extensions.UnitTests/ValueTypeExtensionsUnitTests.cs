@@ -6,13 +6,12 @@
 
 namespace Anori.Extensions.UnitTests
 {
+    using NUnit.Framework;
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    using NUnit.Framework;
-
-    public class EnumerableExtensionsUnitTests
+    public class ValueTypeAndReferenceTypeExtensionsUnitTests
     {
         [Test]
         public void EnumerableExtensions_List_ReferenceAtOrNull_null_ReturnNull()
@@ -20,26 +19,26 @@ namespace Anori.Extensions.UnitTests
             Assert.Throws<ArgumentNullException>(
                 () =>
                     {
-                        IEnumerable<string> list = null;
-                        list.ReferenceAtOrNull(1);
+                        IList<string> list = null;
+                        list.ElementAtOrNull(1);
                     });
         }
 
         [Test]
         public void EnumerableExtensions_List_ReferenceAtOrNull_in_Range_ReturnValue()
         {
-            IEnumerable<string> list = new List<string> { "0", "1", "2", "3" };
+            var list = new List<string> { "0", "1", "2", "3" };
 
-            var actual = list.ReferenceAtOrNull(1);
+            var actual = list.ElementAtOrNull(1);
             Assert.AreEqual("1", actual);
         }
 
         [Test]
         public void EnumerableExtensions_List_ReferenceAtOrNull_in_OutRange_ReturnNull()
         {
-            IEnumerable<string> list = new List<string> { "0", "1", "2", "3" };
+            var list = new List<string> { "0", "1", "2", "3" };
 
-            var actual = list.ReferenceAtOrNull(10);
+            var actual = list.ElementAtOrNull(10);
             Assert.AreEqual(null, actual);
         }
 
@@ -49,26 +48,26 @@ namespace Anori.Extensions.UnitTests
             Assert.Throws<ArgumentNullException>(
                 () =>
                     {
-                        IEnumerable<int> list = null;
-                        list.ValueAtOrNull(1);
+                        IList<int> list = null;
+                        list.ElementAtOrNull(1);
                     });
         }
 
         [Test]
         public void EnumerableExtensions_List_ValueAtOrNull_in_Range_ReturnValue()
         {
-            IEnumerable<int> list = new List<int> { 0, 1, 2, 3 };
+            var list = new List<int> { 0, 1, 2, 3 };
 
-            var actual = list.ValueAtOrNull(1);
+            var actual = list.ElementAtOrNull(1);
             Assert.AreEqual(1, actual);
         }
 
         [Test]
         public void EnumerableExtensions_List_ValueAtOrNull_in_OutRange_ReturnNull()
         {
-            IEnumerable<int> list = new List<int> { 0, 1, 2, 3 };
+            var list = new List<int> { 0, 1, 2, 3 };
 
-            var actual = list.ValueAtOrNull(10);
+            var actual = list.ElementAtOrNull(10);
             Assert.AreEqual(null, actual);
         }
 
@@ -79,16 +78,16 @@ namespace Anori.Extensions.UnitTests
                 () =>
                     {
                         IEnumerable<string> list = null;
-                        list.ReferenceAtOrNull(1);
+                        list.ElementAtOrNull(1);
                     });
         }
 
         [Test]
         public void EnumerableExtensions_Enumerable_ReferenceAtOrNull_in_Range_ReturnValue()
         {
-            IEnumerable<string> list = new []{ "0", "1", "2", "3" }.ToHashSet(); 
+            IEnumerable<string> list = new[] { "0", "1", "2", "3" }.ToHashSet();
 
-            var actual = list.ReferenceAtOrNull(1);
+            var actual = list.ElementAtOrNull(1);
             Assert.AreEqual("1", actual);
         }
 
@@ -97,7 +96,7 @@ namespace Anori.Extensions.UnitTests
         {
             IEnumerable<string> list = new[] { "0", "1", "2", "3" }.ToHashSet();
 
-            var actual = list.ReferenceAtOrNull(10);
+            var actual = list.ElementAtOrNull(10);
             Assert.AreEqual(null, actual);
         }
 
@@ -108,7 +107,7 @@ namespace Anori.Extensions.UnitTests
                 () =>
                     {
                         IEnumerable<int> list = null;
-                        list.ValueAtOrNull(1);
+                        list.ElementAtOrNull(1);
                     });
         }
 
@@ -117,7 +116,7 @@ namespace Anori.Extensions.UnitTests
         {
             IEnumerable<int> list = new[] { 0, 1, 2, 3 }.ToHashSet();
 
-            var actual = list.ValueAtOrNull(1);
+            var actual = list.ElementAtOrNull(1);
             Assert.AreEqual(1, actual);
         }
 
@@ -126,7 +125,7 @@ namespace Anori.Extensions.UnitTests
         {
             IEnumerable<int> list = new[] { 0, 1, 2, 3 }.ToHashSet();
 
-            var actual = list.ValueAtOrNull(10);
+            var actual = list.ElementAtOrNull(10);
             Assert.AreEqual(null, actual);
         }
     }

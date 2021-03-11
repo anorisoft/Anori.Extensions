@@ -1,14 +1,34 @@
-using NUnit.Framework;
-using System.Reflection;
+// -----------------------------------------------------------------------
+// <copyright file="TypeExtensionsUnitTest.cs" company="AnoriSoft">
+// Copyright (c) AnoriSoft. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 namespace Anori.Extensions.UnitTests
 {
+    using System;
+    using System.Reflection;
+
+    using NUnit.Framework;
+
     public class TypeExtensionsUnitTests
     {
         [Test]
+        public void TypeExtensions_IsNullable_Type_Null_ReturnException()
+        {
+            Assert.Throws<ArgumentNullException>(() => { ((Type)null).IsNullable(); });
+        }
+
+        [Test]
+        public void TypeExtensions_IsNullable_TypeInfo_Null_ReturnException()
+        {
+            Assert.Throws<ArgumentNullException>(() => { ((TypeInfo)null).IsNullable(); });
+        }
+
+        [Test]
         public void TypeExtensions_IsNullable_int_ReturnFalse()
         {
-           Assert.False(typeof(int).IsNullable());
+            Assert.False(typeof(int).IsNullable());
         }
 
         [Test]

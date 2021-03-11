@@ -6,6 +6,7 @@
 
 namespace Anori.Extensions.UnitTests
 {
+    using System;
     using System.Collections.Generic;
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -13,6 +14,19 @@ namespace Anori.Extensions.UnitTests
     [TestClass]
     public class ListExtensionsMSUnitTests
     {
+
+        [TestMethod]
+
+        public void ListExtensions_ValueAtOrNull_Null_ReturnNull()
+        {
+            Assert.ThrowsException<ArgumentNullException>(
+                () =>
+                    {
+                        List<int> list = null;
+                        list.ValueAtOrNull(10);
+                    });
+        }
+
         [TestMethod]
 
         public void ListExtensions_ValueAtOrNull_in_OutRange_ReturnNull()

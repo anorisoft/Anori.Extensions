@@ -13,6 +13,7 @@ namespace Anori.Extensions.UnitTests
 
     public class ListExtensionsUnitTests
     {
+
         [Test]
         public void ListExtensions_ReferenceAtOrNull_null_ReturnNull()
         {
