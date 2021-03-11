@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>8.0</LangVersion>
-    <Configurations>Debug;Release;Debug Submodules</Configurations>
+    <Configurations>Debug;Release;Debug Submodules;Release Submodules</Configurations>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Anorisoft.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
