@@ -21,6 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items"
 		..\Run.cake = ..\Run.cake
 		..\Run.cmd = ..\Run.cmd
 		..\RunCI.cmd = ..\RunCI.cmd
+		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{16AF07EF-7EBB-45CE-9653-4EA488DF2AA5}"
