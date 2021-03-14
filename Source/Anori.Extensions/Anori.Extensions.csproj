@@ -26,4 +26,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Anori.Common\Source\Anori.Common\Anori.Common.csproj" />
+  </ItemGroup>
 </Project>
