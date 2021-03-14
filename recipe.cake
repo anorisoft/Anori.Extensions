@@ -1,5 +1,8 @@
 #load nuget:?package=Cake.Recipe&version=2.2.0
 
+
+
+
 Environment.SetVariableNames();
 
 BuildParameters.SetParameters(
@@ -29,5 +32,9 @@ ToolSettings.SetToolSettings(
     testCoverageFilter: "+[*]* -[NUnit*]* -[*.Tests]* -[EmptyFiles]*",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
     testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
+
+
+
+
 
 Build.RunDotNetCore();
