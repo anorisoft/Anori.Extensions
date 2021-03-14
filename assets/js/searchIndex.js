@@ -39,34 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"ReferenceTypeExtensions",
-            content:"ReferenceTypeExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
-            title:"ReferenceTypeExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
             title:"TypeExtensions",
             content:"TypeExtensions",
             description:'',
@@ -80,7 +52,49 @@ var searchModule = function() {
     );
     a(
         {
+            id:1,
+            title:"ListExtensions",
+            content:"ListExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
+            title:"ListExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
+            title:"ReferenceTypeExtensions",
+            content:"ReferenceTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
+            title:"ReferenceTypeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
             id:3,
+            title:"EventHandelExtensions",
+            content:"EventHandelExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Common/EventHandelExtensions',
+            title:"EventHandelExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
             title:"EnumerableExtensions",
             content:"EnumerableExtensions",
             description:'',
@@ -94,15 +108,15 @@ var searchModule = function() {
     );
     a(
         {
-            id:4,
-            title:"ListExtensions",
-            content:"ListExtensions",
+            id:5,
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
-            title:"ListExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
             description:""
         }
     );
