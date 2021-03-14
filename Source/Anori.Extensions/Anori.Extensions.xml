@@ -200,5 +200,202 @@
                 Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
             </returns>
         </member>
+        <member name="T:Anori.Common.EventHandelExtensions">
+            <summary>
+                Event Handel Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise(System.EventHandler,System.Object,System.EventArgs)">
+            <summary>
+            Raises the specified sender.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+            <returns>
+            When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise(System.EventHandler,System.EventArgs)">
+            <summary>
+                Raises the specified e.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+            <returns>
+                Is any raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise(System.ComponentModel.PropertyChangedEventHandler,System.String)">
+            <summary>
+                Raises the specified e.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns>
+                Is any raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise(System.ComponentModel.PropertyChangedEventHandler,System.ComponentModel.INotifyPropertyChanged,System.String)">
+            <summary>
+                Raises the specified sender.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns>Is any raised.</returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise(System.Action)">
+            <summary>
+                Raises the specified action.
+            </summary>
+            <param name="action">The action.</param>
+            <returns>Is any raised.</returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``1(System.Func{``0})">
+            <summary>
+                Raises the specified function.
+            </summary>
+            <typeparam name="T">Resukt Type.</typeparam>
+            <param name="func">The function.</param>
+            <returns>Function result.</returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.RaiseAsync(System.Func{System.Threading.Tasks.Task})">
+            <summary>
+                Raises the asynchronous.
+            </summary>
+            <param name="func">The function.</param>
+            <returns>
+                Result of RaiseAsync as Boolean.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.RaiseAsync``1(System.Func{``0,System.Threading.Tasks.Task},``0)">
+            <summary>
+                Raises the asynchronous.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="func">The function.</param>
+            <param name="arg">The argument.</param>
+            <returns>
+                Result of RaiseAsync as Boolean.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``1(System.Action{``0},``0)">
+            <summary>
+                Raises the specified parameter.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="action">The action.</param>
+            <param name="parameter">The parameter.</param>
+            <returns>Is any is raised.</returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``2(System.Action{``0,``1},``0,``1)">
+            <summary>
+                Raises the specified parameter1.
+            </summary>
+            <typeparam name="T1">The type of the 1.</typeparam>
+            <typeparam name="T2">The type of the 2.</typeparam>
+            <param name="action">The action.</param>
+            <param name="parameter1">The parameter1.</param>
+            <param name="parameter2">The parameter2.</param>
+            <returns>When one has been raised.</returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``3(System.Action{``0,``1,``2},``0,``1,``2)">
+            <summary>
+                Raises the specified parameter1.
+            </summary>
+            <typeparam name="T1">The type of the 1.</typeparam>
+            <typeparam name="T2">The type of the 2.</typeparam>
+            <typeparam name="T3">The type of the 3.</typeparam>
+            <param name="action">The action.</param>
+            <param name="parameter1">The parameter1.</param>
+            <param name="parameter2">The parameter2.</param>
+            <param name="parameter3">The parameter3.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``4(System.Action{``0,``1,``2,``3},``0,``1,``2,``3)">
+            <summary>
+                Raises the specified parameter1.
+            </summary>
+            <typeparam name="T1">The type of the 1.</typeparam>
+            <typeparam name="T2">The type of the 2.</typeparam>
+            <typeparam name="T3">The type of the 3.</typeparam>
+            <typeparam name="T4">The type of the 4.</typeparam>
+            <param name="action">The action.</param>
+            <param name="parameter1">The parameter1.</param>
+            <param name="parameter2">The parameter2.</param>
+            <param name="parameter3">The parameter3.</param>
+            <param name="parameter4">The parameter4.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``1(System.EventHandler{``0},System.Object,``0)">
+            <summary>
+                Raises the specified sender.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <param name="e">The e.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``1(System.EventHandler{``0},``0)">
+            <summary>
+                Raises the specified e.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="eventHandler">The event handler.</param>
+            <param name="e">The e.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``1(System.EventHandler{Anori.Common.EventArgs{``0}},System.Object,``0)">
+            <summary>
+                Raises the specified sender.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <param name="value">The value.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.Raise``1(System.EventHandler{Anori.Common.EventArgs{``0}},``0)">
+            <summary>
+                Raises the specified value.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="eventHandler">The event handler.</param>
+            <param name="value">The value.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.RaiseEmpty(System.EventHandler)">
+            <summary>
+                Raises the empty.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Common.EventHandelExtensions.RaiseEmpty(System.EventHandler,System.Object)">
+            <summary>
+                Raises the empty.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <returns>
+                When one has been raised.
+            </returns>
+        </member>
     </members>
 </doc>
