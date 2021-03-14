@@ -39,14 +39,14 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"TypeExtensions",
-            content:"TypeExtensions",
+            title:"EventHandelExtensions",
+            content:"EventHandelExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
-            title:"TypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Common/EventHandelExtensions',
+            title:"EventHandelExtensions",
             description:""
         }
     );
@@ -67,28 +67,28 @@ var searchModule = function() {
     a(
         {
             id:2,
-            title:"ReferenceTypeExtensions",
-            content:"ReferenceTypeExtensions",
+            title:"TypeExtensions",
+            content:"TypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
-            title:"ReferenceTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
+            title:"TypeExtensions",
             description:""
         }
     );
     a(
         {
             id:3,
-            title:"EventHandelExtensions",
-            content:"EventHandelExtensions",
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Common/EventHandelExtensions',
-            title:"EventHandelExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
             description:""
         }
     );
@@ -109,14 +109,14 @@ var searchModule = function() {
     a(
         {
             id:5,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
+            title:"ReferenceTypeExtensions",
+            content:"ReferenceTypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
+            title:"ReferenceTypeExtensions",
             description:""
         }
     );
