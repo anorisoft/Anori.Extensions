@@ -4,12 +4,14 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.Common
+namespace Anori.Extensions
 {
     using System;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
     using System.Threading.Tasks;
+
+    using Anori.Common;
 
     using JetBrains.Annotations;
 
