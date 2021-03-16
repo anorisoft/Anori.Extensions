@@ -39,20 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"TypeExtensions",
-            content:"TypeExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
-            title:"TypeExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
             title:"ListExtensions",
             content:"ListExtensions",
             description:'',
@@ -66,15 +52,29 @@ var searchModule = function() {
     );
     a(
         {
-            id:2,
-            title:"EnumerableExtensions",
-            content:"EnumerableExtensions",
+            id:1,
+            title:"TaskExtensions",
+            content:"TaskExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/EnumerableExtensions',
-            title:"EnumerableExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/TaskExtensions',
+            title:"TaskExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
             description:""
         }
     );
@@ -95,34 +95,6 @@ var searchModule = function() {
     a(
         {
             id:4,
-            title:"ExpressionExtensions",
-            content:"ExpressionExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ExpressionExtensions',
-            title:"ExpressionExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"TaskExtensions",
-            content:"TaskExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/TaskExtensions',
-            title:"TaskExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
             title:"EventHandelExtensions",
             content:"EventHandelExtensions",
             description:'',
@@ -136,15 +108,43 @@ var searchModule = function() {
     );
     a(
         {
-            id:7,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
+            id:5,
+            title:"EnumerableExtensions",
+            content:"EnumerableExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/EnumerableExtensions',
+            title:"EnumerableExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"ExpressionExtensions",
+            content:"ExpressionExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ExpressionExtensions',
+            title:"ExpressionExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
+            title:"TypeExtensions",
+            content:"TypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
+            title:"TypeExtensions",
             description:""
         }
     );
