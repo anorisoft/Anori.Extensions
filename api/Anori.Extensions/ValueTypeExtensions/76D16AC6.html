@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Anori.Extensions/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Anori.Extensions/assets/img/favicon.ico" type="image/x-icon">
-        <title>Anori.Extensions - API - ValueTypeExtensions.GetValueOrNull&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey) Method</title>
+        <title>Anori.Extensions - API - ValueTypeExtensions.GetValueOrNull&lt;TKey, TResult&gt;(IDictionary&lt;TKey, TResult&gt;, TKey) Method</title>
         <link href="/Anori.Extensions/assets/css/highlight.css" rel="stylesheet">
         <link href="/Anori.Extensions/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Anori.Extensions/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -143,7 +143,7 @@
 			<li class="header">Method Members</li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions/C5FB1F6A">ElementAtOrNull<wbr>&lt;TSource&gt;<wbr><wbr>(IEnumerable<wbr>&lt;TSource&gt;<wbr>, <wbr>int)<wbr></a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions/C660B2C9">ElementAtOrNull<wbr>&lt;TSource&gt;<wbr><wbr>(IList<wbr>&lt;TSource&gt;<wbr>, <wbr>int)<wbr></a></li>
-				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions/76D16AC6">GetValueOrNull<wbr>&lt;TKey, <wbr>TValue&gt;<wbr><wbr>(IDictionary<wbr>&lt;TKey, <wbr>TValue&gt;<wbr>, <wbr>TKey)<wbr></a></li>
+				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions/76D16AC6">GetValueOrNull<wbr>&lt;TKey, <wbr>TResult&gt;<wbr><wbr>(IDictionary<wbr>&lt;TKey, <wbr>TResult&gt;<wbr>, <wbr>TKey)<wbr></a></li>
 
 
                     </ul>
@@ -159,7 +159,7 @@
 
 <section class="content-header">
 			<h3><a href="/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions">ValueTypeExtensions</a>.</h3>
-	<h1>GetValueOrNull<wbr>&lt;TKey, <wbr>TValue&gt;<wbr><wbr>(IDictionary<wbr>&lt;TKey, <wbr>TValue&gt;<wbr>, <wbr>TKey)<wbr> <small>Method</small></h1>
+	<h1>GetValueOrNull<wbr>&lt;TKey, <wbr>TResult&gt;<wbr><wbr>(IDictionary<wbr>&lt;TKey, <wbr>TResult&gt;<wbr>, <wbr>TKey)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
@@ -184,8 +184,8 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static TValue? GetValueOrNull&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dictionary, TKey key) 
-    where TValue : struct</code></pre>
+	<pre><code>public static TResult? GetValueOrNull&lt;TKey, TResult&gt;(this IDictionary&lt;TKey, TResult&gt; dictionary, TKey key) 
+    where TResult : struct</code></pre>
 
 
 
@@ -204,8 +204,8 @@
 						<td>TKey</td>
 						<td>The type of the key.</td>
 					</tr>
-					<tr id="typeparam-TValue">
-						<td>TValue</td>
+					<tr id="typeparam-TResult">
+						<td>TResult</td>
 						<td>The type of the value.</td>
 					</tr>
 			</tbody></table>
@@ -225,7 +225,7 @@
 				</thead>
 					<tbody><tr>
 						<td>dictionary</td>
-						<td>IDictionary<wbr>&lt;TKey, <wbr>TValue&gt;<wbr></td>
+						<td>IDictionary<wbr>&lt;TKey, <wbr>TResult&gt;<wbr></td>
 						<td>The dictionary.</td>
 					</tr>
 					<tr>
@@ -248,9 +248,9 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>TValue?</td>
+					<td>TResult?</td>
 					<td>
-    Result of GetValueOrNull as Nullable{TValue};.
+    Result of GeTResultOrNull as Nullable{TResult};.
     </td>
 				</tr>
 			</tbody></table>

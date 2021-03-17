@@ -143,7 +143,7 @@
 			<li class="header">Method Members</li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions/473397E3">ElementAtOrNull<wbr>&lt;TSource&gt;<wbr><wbr>(IEnumerable<wbr>&lt;TSource&gt;<wbr>, <wbr>int)<wbr></a></li>
 				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions/C4D69597">ElementAtOrNull<wbr>&lt;TSource&gt;<wbr><wbr>(IList<wbr>&lt;TSource&gt;<wbr>, <wbr>int)<wbr></a></li>
-				<li><a href="/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions/74674D98">GetValueOrNull<wbr>&lt;TKey, <wbr>TValue&gt;<wbr><wbr>(IDictionary<wbr>&lt;TKey, <wbr>TValue&gt;<wbr>, <wbr>TKey)<wbr></a></li>
+				<li><a href="/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions/CE04B671">GetObjectOrNull<wbr>&lt;TKey, <wbr>TValue&gt;<wbr><wbr>(IDictionary<wbr>&lt;TKey, <wbr>TValue&gt;<wbr>, <wbr>TKey)<wbr></a></li>
 
 
                     </ul>
@@ -184,7 +184,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static TSource ElementAtOrNull&lt;TSource&gt;(this IList&lt;TSource&gt; source, int index) 
+	<pre><code>public static TSource? ElementAtOrNull&lt;TSource&gt;(this IList&lt;TSource&gt; source, int index) 
     where TSource : class</code></pre>
 
 
@@ -244,7 +244,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>TSource</td>
+					<td>TSource?</td>
 					<td>
     Result of ElementAtOrNull as TSource.
     </td>
