@@ -82,17 +82,17 @@ namespace Anori.Extensions
         /// Gets the value or null.
         /// </summary>
         /// <typeparam name="TKey">The type of the key.</typeparam>
-        /// <typeparam name="TValue">The type of the value.</typeparam>
+        /// <typeparam name="TResult">The type of the value.</typeparam>
         /// <param name="dictionary">The dictionary.</param>
         /// <param name="key">The key.</param>
         /// <returns>
-        /// Result of GetValueOrNull as Nullable{TValue};.
+        /// Result of GeTResultOrNull as Nullable{TResult};.
         /// </returns>
         /// <exception cref="ArgumentNullException">dictionary is null.</exception>
-        public static TValue? GetValueOrNull<TKey, TValue>(
-            [NotNull] this IDictionary<TKey, TValue> dictionary,
+        public static TResult? GeTResultOrNull<TKey, TResult>(
+            [NotNull] this IDictionary<TKey, TResult> dictionary,
             TKey key)
-            where TValue : struct
+            where TResult : struct
         {
             if (dictionary == null)
             {
