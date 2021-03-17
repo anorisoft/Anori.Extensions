@@ -19,7 +19,7 @@ namespace Anori.Extensions.UnitTests
                 () =>
                     {
                         Dictionary<int, string> dictionary = null;
-                        dictionary.GetValueOrNull(1);
+                        dictionary.GetObjectOrNull(1);
                     });
         }
 
@@ -39,7 +39,7 @@ namespace Anori.Extensions.UnitTests
         {
             var dictionary = new Dictionary<int, string> { { 1, "1" }, { 2, "2" }, { 3, "3" } };
 
-            var actual = dictionary.GetValueOrNull(1);
+            var actual = dictionary.GetObjectOrNull(1);
             Assert.AreEqual("1", actual);
         }
 
@@ -57,7 +57,7 @@ namespace Anori.Extensions.UnitTests
         {
             var dictionary = new Dictionary<int, string> { { 1, "1" }, { 2, "2" }, { 3, "3" } };
 
-            var actual = dictionary.GetValueOrNull(4);
+            var actual = dictionary.GetObjectOrNull(4);
 
             Assert.AreEqual(null, actual);
         }

@@ -198,7 +198,7 @@ namespace Anori.Extensions
         /// <param name="parameter1">The parameter1.</param>
         /// <param name="parameter2">The parameter2.</param>
         /// <returns>When one has been raised.</returns>
-        public static bool Raise<T1, T2>(this Action<T1, T2> action, T1 parameter1, T2 parameter2)
+        public static bool Raise<T1, T2>(this Action<T1, T2>? action, T1 parameter1, T2 parameter2)
         {
             if (action != null)
             {
@@ -223,7 +223,7 @@ namespace Anori.Extensions
         ///     When one has been raised.
         /// </returns>
         public static bool Raise<T1, T2, T3>(
-            this Action<T1, T2, T3> action,
+            this Action<T1, T2, T3>? action,
             T1 parameter1,
             T2 parameter2,
             T3 parameter3)
@@ -299,7 +299,7 @@ namespace Anori.Extensions
         /// <returns>
         ///     When one has been raised.
         /// </returns>
-        public static bool Raise<T>(this EventHandler<T> eventHandler, T e)
+        public static bool Raise<T>(this EventHandler<T>? eventHandler, T e)
             where T : EventArgs
         {
             if (eventHandler == null)
@@ -321,7 +321,7 @@ namespace Anori.Extensions
         /// <returns>
         ///     When one has been raised.
         /// </returns>
-        public static bool Raise<T>(this EventHandler<EventArgs<T>> eventHandler, object sender, T value)
+        public static bool Raise<T>(this EventHandler<EventArgs<T>>? eventHandler, object sender, T value)
         {
             if (eventHandler == null)
             {
@@ -341,7 +341,7 @@ namespace Anori.Extensions
         /// <returns>
         ///     When one has been raised.
         /// </returns>
-        public static bool Raise<T>(this EventHandler<EventArgs<T>> eventHandler, T value)
+        public static bool Raise<T>(this EventHandler<EventArgs<T>>? eventHandler, T value)
         {
             if (eventHandler == null)
             {

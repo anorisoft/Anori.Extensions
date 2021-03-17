@@ -26,7 +26,7 @@ namespace Anori.Extensions
         ///     Result of ElementAtOrNull as TSource.
         /// </returns>
         /// <exception cref="ArgumentNullException">source is null.</exception>
-        public static TSource ElementAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
+        public static TSource? ElementAtOrNull<TSource>([NotNull] this IEnumerable<TSource> source, int index)
             where TSource : class
         {
             if (source == null)
@@ -62,7 +62,7 @@ namespace Anori.Extensions
         /// Result of ElementAtOrNull as TSource.
         /// </returns>
         /// <exception cref="ArgumentNullException">source is null.</exception>
-        public static TSource ElementAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
+        public static TSource? ElementAtOrNull<TSource>([NotNull] this IList<TSource> source, int index)
             where TSource : class
         {
             if (source == null)
@@ -89,7 +89,7 @@ namespace Anori.Extensions
         /// Result of GetValueOrNull as TValue.
         /// </returns>
         /// <exception cref="ArgumentNullException">dictionary is null.</exception>
-        public static TValue GetValueOrNull<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key)
+        public static TValue? GetObjectOrNull<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key)
             where TValue : class
         {
             if (dictionary == null)
@@ -114,7 +114,7 @@ namespace Anori.Extensions
         /// <returns>
         ///     Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
         /// </returns>
-        private static TSource CurrentFromEnumerator<TSource>(IEnumerable<TSource> source, int index)
+        private static TSource? CurrentFromEnumerator<TSource>(IEnumerable<TSource> source, int index)
             where TSource : class
         {
             using var e = source.GetEnumerator();

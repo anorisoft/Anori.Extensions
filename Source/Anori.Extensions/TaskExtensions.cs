@@ -85,7 +85,7 @@ namespace Anori.Extensions
 #pragma warning disable S3168 // "async" methods should not return "void"
 
         /// <summary>
-        ///     Fires the and forget safe asynchronous.
+        /// Fires the and forget safe asynchronous.
         /// </summary>
         /// <typeparam name="T">The type.</typeparam>
         /// <param name="task">The task.</param>
@@ -94,7 +94,7 @@ namespace Anori.Extensions
         /// <param name="final">The final.</param>
         /// <param name="cancel">The cancel.</param>
         /// <param name="configureAwait">if set to <c>true</c> [configure await].</param>
-        /// <exception cref="System.ArgumentNullException">task</exception>
+        /// <exception cref="ArgumentNullException">task is null.</exception>
         public static async void FireAndForgetSafeAsync<T>(
             [NotNull] this Task<T> task,
             Action<T>? completed = null,

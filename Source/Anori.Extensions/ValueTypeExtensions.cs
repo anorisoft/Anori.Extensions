@@ -89,7 +89,7 @@ namespace Anori.Extensions
         /// Result of GeTResultOrNull as Nullable{TResult};.
         /// </returns>
         /// <exception cref="ArgumentNullException">dictionary is null.</exception>
-        public static TResult? GeTResultOrNull<TKey, TResult>(
+        public static TResult? GetValueOrNull<TKey, TResult>(
             [NotNull] this IDictionary<TKey, TResult> dictionary,
             TKey key)
             where TResult : struct
