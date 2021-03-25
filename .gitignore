@@ -287,3 +287,6 @@ BuildArtifacts/
 config.wyam.dll
 config.wyam.hash
 config.wyam.packages.xml
+/config.wyam.dll
+/config.wyam.hash
+/config.wyam.packages.xml
