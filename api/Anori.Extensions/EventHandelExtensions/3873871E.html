@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Anori.Extensions/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Anori.Extensions/assets/img/favicon.ico" type="image/x-icon">
-        <title>Anori.Extensions - API - EventHandelExtensions.RaiseEmpty(EventHandler) Method</title>
+        <title>Anori.Extensions - API - EventHandelExtensions.RaiseEmpty(EventHandler?, object) Method</title>
         <link href="/Anori.Extensions/assets/css/highlight.css" rel="stylesheet">
         <link href="/Anori.Extensions/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Anori.Extensions/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -156,8 +156,8 @@
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/939251B0">Raise<wbr>&lt;T&gt;<wbr><wbr>(EventHandler<wbr>&lt;EventArgs<wbr>&lt;T&gt;<wbr>&gt;<wbr>?, <wbr>T)<wbr></a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/ED1C61AA">RaiseAsync<wbr>(Func<wbr>&lt;Task&gt;<wbr>?)<wbr></a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/82E69EB8">RaiseAsync<wbr>&lt;T&gt;<wbr><wbr>(Func<wbr>&lt;T, <wbr>Task&gt;<wbr>?, <wbr>T)<wbr></a></li>
-				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/30525419">RaiseEmpty<wbr>(EventHandler)<wbr></a></li>
-				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/F83BB5AC">RaiseEmpty<wbr>(EventHandler, <wbr>object)<wbr></a></li>
+				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/6A9A9694">RaiseEmpty<wbr>(EventHandler?)<wbr></a></li>
+				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/3873871E">RaiseEmpty<wbr>(EventHandler?, <wbr>object)<wbr></a></li>
 
 
                     </ul>
@@ -173,7 +173,7 @@
 
 <section class="content-header">
 			<h3><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions">Event<wbr>Handel<wbr>Extensions</a>.</h3>
-	<h1>RaiseEmpty<wbr>(EventHandler)<wbr> <small>Method</small></h1>
+	<h1>RaiseEmpty<wbr>(EventHandler?, <wbr>object)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
@@ -198,7 +198,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static bool RaiseEmpty(this EventHandler eventHandler)</code></pre>
+	<pre><code>public static bool RaiseEmpty(this EventHandler? eventHandler, object sender)</code></pre>
 
 
 
@@ -217,8 +217,13 @@
 				</thead>
 					<tbody><tr>
 						<td>eventHandler</td>
-						<td>EventHandler</td>
+						<td>EventHandler?</td>
 						<td>The event handler.</td>
+					</tr>
+					<tr>
+						<td>sender</td>
+						<td>object</td>
+						<td>The sender.</td>
 					</tr>
 			</tbody></table>
 		</div>
