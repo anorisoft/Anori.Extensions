@@ -40,13 +40,13 @@
         </member>
         <member name="M:Anori.Extensions.EventHandelExtensions.Raise(System.EventHandler,System.Object,System.EventArgs)">
             <summary>
-            Raises the specified sender.
+                Raises the specified sender.
             </summary>
             <param name="eventHandler">The event handler.</param>
             <param name="sender">The sender.</param>
             <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
             <returns>
-            When one has been raised.
+                When one has been raised.
             </returns>
         </member>
         <member name="M:Anori.Extensions.EventHandelExtensions.Raise(System.EventHandler,System.EventArgs)">
@@ -92,26 +92,6 @@
             <typeparam name="T">Resukt Type.</typeparam>
             <param name="func">The function.</param>
             <returns>Function result.</returns>
-        </member>
-        <member name="M:Anori.Extensions.EventHandelExtensions.RaiseAsync(System.Func{System.Threading.Tasks.Task})">
-            <summary>
-                Raises the asynchronous.
-            </summary>
-            <param name="func">The function.</param>
-            <returns>
-                Result of RaiseAsync as Boolean.
-            </returns>
-        </member>
-        <member name="M:Anori.Extensions.EventHandelExtensions.RaiseAsync``1(System.Func{``0,System.Threading.Tasks.Task},``0)">
-            <summary>
-                Raises the asynchronous.
-            </summary>
-            <typeparam name="T">The type.</typeparam>
-            <param name="func">The function.</param>
-            <param name="arg">The argument.</param>
-            <returns>
-                Result of RaiseAsync as Boolean.
-            </returns>
         </member>
         <member name="M:Anori.Extensions.EventHandelExtensions.Raise``1(System.Action{``0},``0)">
             <summary>
@@ -209,6 +189,26 @@
             <param name="value">The value.</param>
             <returns>
                 When one has been raised.
+            </returns>
+        </member>
+        <member name="M:Anori.Extensions.EventHandelExtensions.RaiseAsync(System.Func{System.Threading.Tasks.Task})">
+            <summary>
+                Raises the asynchronous.
+            </summary>
+            <param name="func">The function.</param>
+            <returns>
+                Result of RaiseAsync as Boolean.
+            </returns>
+        </member>
+        <member name="M:Anori.Extensions.EventHandelExtensions.RaiseAsync``1(System.Func{``0,System.Threading.Tasks.Task},``0)">
+            <summary>
+                Raises the asynchronous.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="func">The function.</param>
+            <param name="arg">The argument.</param>
+            <returns>
+                Result of RaiseAsync as Boolean.
             </returns>
         </member>
         <member name="M:Anori.Extensions.EventHandelExtensions.RaiseEmpty(System.EventHandler)">
@@ -392,7 +392,7 @@
             </returns>
             <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
-        <member name="M:Anori.Extensions.ReferenceTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.GetObjectOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
             <summary>
             Gets the value or null.
             </summary>
@@ -442,7 +442,7 @@
         </member>
         <member name="M:Anori.Extensions.TaskExtensions.FireAndForgetSafeAsync``1(System.Threading.Tasks.Task{``0},System.Action{``0},System.Action{System.Exception},System.Action,System.Action,System.Boolean)">
             <summary>
-                Fires the and forget safe asynchronous.
+            Fires the and forget safe asynchronous.
             </summary>
             <typeparam name="T">The type.</typeparam>
             <param name="task">The task.</param>
@@ -451,7 +451,7 @@
             <param name="final">The final.</param>
             <param name="cancel">The cancel.</param>
             <param name="configureAwait">if set to <c>true</c> [configure await].</param>
-            <exception cref="T:System.ArgumentNullException">task</exception>
+            <exception cref="T:System.ArgumentNullException">task is null.</exception>
         </member>
         <member name="M:Anori.Extensions.TaskExtensions.FireAndForgetSafeAsync``1(System.Threading.Tasks.Task{``0},System.Func{``0,System.Threading.Tasks.Task},System.Func{System.Exception,System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Boolean)">
             <summary>
@@ -539,7 +539,7 @@
             </returns>
             <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
-        <member name="M:Anori.Extensions.ValueTypeExtensions.GeTResultOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+        <member name="M:Anori.Extensions.ValueTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
             <summary>
             Gets the value or null.
             </summary>

@@ -21,13 +21,13 @@ namespace Anori.Extensions
     public static class EventHandelExtensions
     {
         /// <summary>
-        /// Raises the specified sender.
+        ///     Raises the specified sender.
         /// </summary>
         /// <param name="eventHandler">The event handler.</param>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         /// <returns>
-        /// When one has been raised.
+        ///     When one has been raised.
         /// </returns>
         public static bool Raise(this EventHandler? eventHandler, object sender, EventArgs e)
         {
@@ -131,44 +131,6 @@ namespace Anori.Extensions
             }
 
             return func();
-        }
-
-        /// <summary>
-        ///     Raises the asynchronous.
-        /// </summary>
-        /// <param name="func">The function.</param>
-        /// <returns>
-        ///     Result of RaiseAsync as Boolean.
-        /// </returns>
-        public static async Task<bool> RaiseAsync(this Func<Task>? func)
-        {
-            if (func == null)
-            {
-                return false;
-            }
-
-            await func.Invoke();
-            return true;
-        }
-
-        /// <summary>
-        ///     Raises the asynchronous.
-        /// </summary>
-        /// <typeparam name="T">The type.</typeparam>
-        /// <param name="func">The function.</param>
-        /// <param name="arg">The argument.</param>
-        /// <returns>
-        ///     Result of RaiseAsync as Boolean.
-        /// </returns>
-        public static async Task<bool> RaiseAsync<T>(this Func<T, Task>? func, T arg)
-        {
-            if (func == null)
-            {
-                return false;
-            }
-
-            await func.Invoke(arg);
-            return true;
         }
 
         /// <summary>
@@ -353,13 +315,51 @@ namespace Anori.Extensions
         }
 
         /// <summary>
+        ///     Raises the asynchronous.
+        /// </summary>
+        /// <param name="func">The function.</param>
+        /// <returns>
+        ///     Result of RaiseAsync as Boolean.
+        /// </returns>
+        public static async Task<bool> RaiseAsync(this Func<Task>? func)
+        {
+            if (func == null)
+            {
+                return false;
+            }
+
+            await func.Invoke();
+            return true;
+        }
+
+        /// <summary>
+        ///     Raises the asynchronous.
+        /// </summary>
+        /// <typeparam name="T">The type.</typeparam>
+        /// <param name="func">The function.</param>
+        /// <param name="arg">The argument.</param>
+        /// <returns>
+        ///     Result of RaiseAsync as Boolean.
+        /// </returns>
+        public static async Task<bool> RaiseAsync<T>(this Func<T, Task>? func, T arg)
+        {
+            if (func == null)
+            {
+                return false;
+            }
+
+            await func.Invoke(arg);
+            return true;
+        }
+
+        /// <summary>
         ///     Raises the empty.
         /// </summary>
         /// <param name="eventHandler">The event handler.</param>
         /// <returns>
         ///     When one has been raised.
         /// </returns>
-        public static bool RaiseEmpty(this EventHandler eventHandler) => Raise(eventHandler, EventArgs.Empty);
+        public static bool RaiseEmpty(this EventHandler? eventHandler) => Raise(eventHandler, EventArgs.Empty);
 
         /// <summary>
         ///     Raises the empty.
@@ -369,7 +369,7 @@ namespace Anori.Extensions
         /// <returns>
         ///     When one has been raised.
         /// </returns>
-        public static bool RaiseEmpty(this EventHandler eventHandler, object sender) =>
+        public static bool RaiseEmpty(this EventHandler? eventHandler, object sender) =>
             Raise(eventHandler, sender, EventArgs.Empty);
     }
 }
