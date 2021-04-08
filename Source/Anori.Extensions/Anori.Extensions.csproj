@@ -50,12 +50,6 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup Condition="!($(Configuration.Contains('Submodules')))">
-    <PackageReference Include="Anori.Common" Version="1.0.0-alpha0006" />
-  </ItemGroup>
-
-  <ItemGroup Condition="($(Configuration.Contains('Submodules')))">
-    <ProjectReference Include="$(SolutionDir)..\Submodules\Anori.Common\Source\Anori.Common\Anori.Common.csproj" />
-  </ItemGroup>
+ 
 
 </Project>

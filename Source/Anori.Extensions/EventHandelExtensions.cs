@@ -11,8 +11,6 @@ namespace Anori.Extensions
     using System.Runtime.CompilerServices;
     using System.Threading.Tasks;
 
-    using Anori.Common;
-
     using JetBrains.Annotations;
 
     /// <summary>
