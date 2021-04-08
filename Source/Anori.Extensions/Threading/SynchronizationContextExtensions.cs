@@ -20,6 +20,41 @@ namespace Anori.Extensions.Threading
     public static class SynchronizationContextExtensions
     {
         /// <summary>
+        /// Sends the specified function.
+        /// </summary>
+        /// <typeparam name="TArg1">The type of the arg1.</typeparam>
+        /// <typeparam name="TResult">The type of the result.</typeparam>
+        /// <param name="synchronizationContext">The synchronization context.</param>
+        /// <param name="func">The function.</param>
+        /// <param name="arg1">The arg1.</param>
+        /// <returns>The result.</returns>
+        public static TResult Send<TArg1, TResult>(
+            this SynchronizationContext synchronizationContext,
+            Func<TArg1, TResult> func,
+            TArg1 arg1)
+        {
+            var state = new SendFuncState<TArg1, TResult>(func, arg1);
+            static void SendOrPostCallback(object obj) => ((SendFuncState<TArg1, TResult>)obj).Excecute();
+            synchronizationContext.Send(SendOrPostCallback, state);
+            return state.Result!;
+        }
+
+        /// <summary>
+        /// Sends the specified function.
+        /// </summary>
+        /// <typeparam name="TResult">The type of the result.</typeparam>
+        /// <param name="synchronizationContext">The synchronization context.</param>
+        /// <param name="func">The function.</param>
+        /// <returns>The result.</returns>
+        public static TResult Send<TResult>(this SynchronizationContext synchronizationContext, Func<TResult> func)
+        {
+            var state = new SendFuncState<TResult>( func );
+            static void SendOrPostCallback(object obj) => ((SendFuncState<TResult>)obj).Excecute();
+            synchronizationContext.Send(SendOrPostCallback, state);
+            return state.Result!;
+        }
+
+        /// <summary>
         ///     Dispatches the specified action.
         /// </summary>
         /// <param name="context">The context.</param>
