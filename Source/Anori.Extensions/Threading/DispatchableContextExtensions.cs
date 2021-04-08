@@ -94,7 +94,7 @@ namespace Anori.Extensions.Threading
         public static void Dispatch<T>(
             [NotNull] this IDispatchableContext context,
             T value,
-            EventHandler<EventArgs>? handler)
+            EventHandler<EventArgs<T>>? handler)
         {
             if (context == null)
             {
@@ -251,7 +251,7 @@ namespace Anori.Extensions.Threading
         public static Task DispatchAsync<T>(
             [NotNull] this IDispatchableContext context,
             T value,
-            EventHandler<EventArgs>? handler)
+            EventHandler<EventArgs<T>>? handler)
         {
             if (context == null)
             {

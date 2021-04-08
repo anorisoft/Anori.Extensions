@@ -226,7 +226,7 @@ namespace Anori.Extensions.Threading
                     },
                 new ValueTuple<object, TEventArgs>(sender, args));
         }
-
+        
         /// <summary>
         ///     Dispatches the specified arguments.
         /// </summary>
