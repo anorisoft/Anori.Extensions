@@ -39,42 +39,42 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"EventHandelExtensions",
-            content:"EventHandelExtensions",
+            title:"ExpressionExtensions",
+            content:"ExpressionExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions',
-            title:"EventHandelExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/ExpressionExtensions',
+            title:"ExpressionExtensions",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"ListExtensions",
-            content:"ListExtensions",
+            title:"TaskExtensions",
+            content:"TaskExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
-            title:"ListExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/TaskExtensions',
+            title:"TaskExtensions",
             description:""
         }
     );
     a(
         {
             id:2,
-            title:"EventArgs",
-            content:"EventArgs",
+            title:"SendFuncState",
+            content:"SendFuncState",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/EventArgs_1',
-            title:"EventArgs<T>",
+            url:'/Anori.Extensions/api/Anori.ExpressionObservers.ValueTypeObservers/SendFuncState_2',
+            title:"SendFuncState<TArg1, TResult>",
             description:""
         }
     );
@@ -95,14 +95,14 @@ var searchModule = function() {
     a(
         {
             id:4,
-            title:"TaskExtensions",
-            content:"TaskExtensions",
+            title:"EventArgs",
+            content:"EventArgs",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/TaskExtensions',
-            title:"TaskExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/EventArgs_1',
+            title:"EventArgs<T>",
             description:""
         }
     );
@@ -137,20 +137,34 @@ var searchModule = function() {
     a(
         {
             id:7,
-            title:"ExpressionExtensions",
-            content:"ExpressionExtensions",
+            title:"SendFuncState",
+            content:"SendFuncState",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ExpressionExtensions',
-            title:"ExpressionExtensions",
+            url:'/Anori.Extensions/api/Anori.ExpressionObservers.ValueTypeObservers/SendFuncState_1',
+            title:"SendFuncState<TResult>",
             description:""
         }
     );
     a(
         {
             id:8,
+            title:"EventHandelExtensions",
+            content:"EventHandelExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions',
+            title:"EventHandelExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:9,
             title:"ReferenceTypeExtensions",
             content:"ReferenceTypeExtensions",
             description:'',
@@ -159,6 +173,20 @@ var searchModule = function() {
         {
             url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
             title:"ReferenceTypeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"ListExtensions",
+            content:"ListExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ListExtensions',
+            title:"ListExtensions",
             description:""
         }
     );
