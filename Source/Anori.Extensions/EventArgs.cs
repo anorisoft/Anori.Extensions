@@ -19,10 +19,7 @@ namespace Anori.Extensions
         /// Initializes a new instance of the <see cref="EventArgs{T}"/> class.
         /// </summary>
         /// <param name="value">The value.</param>
-        public EventArgs(T value)
-        {
-            this.Value = value;
-        }
+        public EventArgs(T value) => this.Value = value;
 
         /// <summary>
         /// Gets the value.

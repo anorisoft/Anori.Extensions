@@ -33,6 +33,27 @@
             </returns>
             <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
+        <member name="T:Anori.Extensions.EventArgs`1">
+            <summary>
+            Generic Event Args.
+            </summary>
+            <typeparam name="T">Payload Type.</typeparam>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="M:Anori.Extensions.EventArgs`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Anori.Extensions.EventArgs`1"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:Anori.Extensions.EventArgs`1.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
         <member name="T:Anori.Extensions.EventHandelExtensions">
             <summary>
                 Event Handel Extensions.
@@ -168,7 +189,7 @@
                 When one has been raised.
             </returns>
         </member>
-        <member name="M:Anori.Extensions.EventHandelExtensions.Raise``1(System.EventHandler{Anori.Common.EventArgs{``0}},System.Object,``0)">
+        <member name="M:Anori.Extensions.EventHandelExtensions.Raise``1(System.EventHandler{Anori.Extensions.EventArgs{``0}},System.Object,``0)">
             <summary>
                 Raises the specified sender.
             </summary>
@@ -180,7 +201,7 @@
                 When one has been raised.
             </returns>
         </member>
-        <member name="M:Anori.Extensions.EventHandelExtensions.Raise``1(System.EventHandler{Anori.Common.EventArgs{``0}},``0)">
+        <member name="M:Anori.Extensions.EventHandelExtensions.Raise``1(System.EventHandler{Anori.Extensions.EventArgs{``0}},``0)">
             <summary>
                 Raises the specified value.
             </summary>
