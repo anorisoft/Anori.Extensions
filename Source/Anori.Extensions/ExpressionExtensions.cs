@@ -8,7 +8,9 @@ namespace Anori.Extensions
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Linq.Expressions;
+    using System.Text;
 
     /// <summary>
     ///     Expression Extensions.
@@ -128,14 +130,57 @@ namespace Anori.Extensions
         /// </returns>
         private static string ReplaceParameters(IEnumerable<ParameterExpression> parameters, string expressionString)
         {
+            Debug.WriteLine($"ExpressionString: {expressionString}");
+            var index = expressionString.IndexOf(" =>");
+            var intro = expressionString.Substring(0, index);
+            Debug.WriteLine($"Intro: {intro}");
+
+            var innerExpression = expressionString.Substring(index + 3) + " ";
+
+            Debug.WriteLine($"InnerExpression: {innerExpression}");
             var i = 1;
+            var newIntro = new StringBuilder("(");
+            var first = true;
+
             foreach (var parameter in parameters)
             {
-                expressionString = expressionString.Replace(parameter.Name, $"arg{i}");
+                var arg = $"arg{i}";
+                innerExpression = innerExpression.Replace($" {parameter.Name}.", $" {arg}.");
+                innerExpression = innerExpression.Replace($"({parameter.Name}.", $"({arg}.");
+                innerExpression = innerExpression.Replace($" {parameter.Name} ", $" {arg} ");
+                innerExpression = innerExpression.Replace($"\"{parameter.Name}\"", $"\"{arg}\"");
+                innerExpression = innerExpression.Replace($"({parameter.Name})", $"({arg})");
                 i++;
+                if (!first)
+                {
+                    newIntro.Append(", ");
+                }
+
+                newIntro.Append(arg);
+                first = false;
             }
 
-            return expressionString;
+            var start = 0;
+            while (start >= 0)
+            {
+                start = innerExpression.IndexOf("value(");
+                if (start > 0)
+                {
+                    var arg = $"arg{i}";
+                    var a = innerExpression.IndexOf(").", start);
+                    var end = innerExpression.IndexOf(".", a + 2);
+                    var str = innerExpression.Substring(start, end - start);
+                    Debug.WriteLine($"Str: {str}");
+                    Debug.WriteLine($"InnerExpression: {innerExpression}");
+                    innerExpression = innerExpression.Replace(str, $"{arg}");
+                    newIntro.Append(arg);
+                }
+            }
+
+            newIntro.Append(") =>");
+            newIntro.Append(innerExpression);
+
+            return newIntro.ToString().Trim();
         }
     }
 }
