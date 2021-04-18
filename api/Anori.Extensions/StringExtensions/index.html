@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Anori.Extensions/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Anori.Extensions/assets/img/favicon.ico" type="image/x-icon">
-        <title>Anori.Extensions - API - EventHandelExtensions Class</title>
+        <title>Anori.Extensions - API - StringExtensions Class</title>
         <link href="/Anori.Extensions/assets/css/highlight.css" rel="stylesheet">
         <link href="/Anori.Extensions/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Anori.Extensions/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -139,11 +139,11 @@
 			<li class="header">Class Types</li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/EnumerableExtensions">EnumerableExtensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventArgs_1">EventArgs<wbr>&lt;T&gt;<wbr></a></li>
-				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions">Event<wbr>Handel<wbr>Extensions</a></li>
+				<li><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions">Event<wbr>Handel<wbr>Extensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ExpressionExtensions">ExpressionExtensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ListExtensions">ListExtensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions">Reference<wbr>Type<wbr>Extensions</a></li>
-				<li><a href="/Anori.Extensions/api/Anori.Extensions/StringExtensions">StringExtensions</a></li>
+				<li class="selected"><a href="/Anori.Extensions/api/Anori.Extensions/StringExtensions">StringExtensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/TaskExtensions">TaskExtensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/TypeExtensions">TypeExtensions</a></li>
 				<li><a href="/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions">ValueTypeExtensions</a></li>
@@ -161,14 +161,14 @@
 
 
 <section class="content-header">
-	<h1>Event<wbr>Handel<wbr>Extensions <small>Class</small></h1>
+	<h1>StringExtensions <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-        Event Handel Extensions.
+    The String Extensions class.
     </div>
 
 		<div class="panel panel-default">
@@ -195,7 +195,7 @@
 						<div class="mermaid">
 							graph BT
 	Type--&gt;Base0["object"]
-	Type["EventHandelExtensions"]
+	Type["StringExtensions"]
 class Type type-node
 
 						</div>
@@ -205,7 +205,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static class EventHandelExtensions</code></pre>
+	<pre><code>public static class StringExtensions</code></pre>
 
 
 
@@ -229,181 +229,21 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/BFBA0722">Raise<wbr>(Action?)<wbr></a></td>
-								<td>bool</td>
+								<td><a href="/Anori.Extensions/api/Anori.Extensions/StringExtensions/9CB18137">IndexOfAnyChar<wbr>(string?, <wbr>char[])<wbr></a></td>
+								<td><wbr>(int index, <wbr>char value)<wbr></td>
 								<td>
 									<div>
-        Raises the specified action.
+    Indexes the of any character.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/1CAA9960">Raise<wbr>(EventHandler?, <wbr>EventArgs)<wbr></a></td>
-								<td>bool</td>
+								<td><a href="/Anori.Extensions/api/Anori.Extensions/StringExtensions/5184B5E2">IndexOfAnyChar<wbr>(string?, <wbr>char[], <wbr>int)<wbr></a></td>
+								<td><wbr>(int index, <wbr>char value)<wbr></td>
 								<td>
 									<div>
-        Raises the specified e.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/D2A0E748">Raise<wbr>(EventHandler?, <wbr>object, <wbr>EventArgs)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified sender.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/07764561">Raise<wbr>(<wbr>Property<wbr>Changed<wbr>Event<wbr>Handler?, <wbr>I<wbr>Notify<wbr>Property<wbr>Changed, <wbr>string?)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified sender.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/8F5BF469">Raise<wbr>(<wbr>Property<wbr>Changed<wbr>Event<wbr>Handler?, <wbr>string?)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified e.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/3C97BCF4">Raise<wbr>&lt;T&gt;<wbr><wbr>(Action<wbr>&lt;T&gt;<wbr>?, <wbr>T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified parameter.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/839A08AA">Raise<wbr>&lt;T&gt;<wbr><wbr>(EventHandler<wbr>&lt;EventArgs<wbr>&lt;T&gt;<wbr>&gt;<wbr>?, <wbr>object, <wbr>T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified sender.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/9F07FBCC">Raise<wbr>&lt;T&gt;<wbr><wbr>(EventHandler<wbr>&lt;EventArgs<wbr>&lt;T&gt;<wbr>&gt;<wbr>?, <wbr>T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified value.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/B4E18EC8">Raise<wbr>&lt;T&gt;<wbr><wbr>(EventHandler<wbr>&lt;T&gt;<wbr>?, <wbr>object, <wbr>T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified sender.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/041698BC">Raise<wbr>&lt;T&gt;<wbr><wbr>(EventHandler<wbr>&lt;T&gt;<wbr>?, <wbr>T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified e.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/86FF4F3D">Raise<wbr>&lt;T&gt;<wbr><wbr>(Func<wbr>&lt;T&gt;<wbr>?)<wbr></a></td>
-								<td>T</td>
-								<td>
-									<div>
-        Raises the specified function.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/06EC444D">Raise<wbr>&lt;T1, <wbr>T2, <wbr>T3, <wbr>T4&gt;<wbr><wbr>(Action<wbr>&lt;T1, <wbr>T2, <wbr>T3, <wbr>T4&gt;<wbr>?, <wbr>T1, <wbr>T2, <wbr>T3, <wbr>T4)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified parameter1.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/54FEB414">Raise<wbr>&lt;T1, <wbr>T2, <wbr>T3&gt;<wbr><wbr>(Action<wbr>&lt;T1, <wbr>T2, <wbr>T3&gt;<wbr>?, <wbr>T1, <wbr>T2, <wbr>T3)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified parameter1.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/6E5FCB94">Raise<wbr>&lt;T1, <wbr>T2&gt;<wbr><wbr>(Action<wbr>&lt;T1, <wbr>T2&gt;<wbr>?, <wbr>T1, <wbr>T2)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the specified parameter1.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/ED1C61AA">RaiseAsync<wbr>(Func<wbr>&lt;Task&gt;<wbr>?)<wbr></a></td>
-								<td>Task<wbr>&lt;bool&gt;<wbr></td>
-								<td>
-									<div>
-        Raises the asynchronous.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/82E69EB8">RaiseAsync<wbr>&lt;T&gt;<wbr><wbr>(Func<wbr>&lt;T, <wbr>Task&gt;<wbr>?, <wbr>T)<wbr></a></td>
-								<td>Task<wbr>&lt;bool&gt;<wbr></td>
-								<td>
-									<div>
-        Raises the asynchronous.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/6A9A9694">RaiseEmpty<wbr>(EventHandler?)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the empty.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Extensions/api/Anori.Extensions/EventHandelExtensions/3873871E">RaiseEmpty<wbr>(EventHandler?, <wbr>object)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-        Raises the empty.
+        Indexes the of any character.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
