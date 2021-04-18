@@ -18,6 +18,16 @@ namespace Anori.Extensions
     public static class ExpressionExtensions
     {
         /// <summary>
+        /// Converts to anonymousparametersstring.
+        /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>
+        ///     Result of ToAnonymousParametersString as String.
+        /// </returns>
+        public static string ToAnonymousParametersString(this LambdaExpression expression) =>
+            ReplaceParameters(expression.Parameters, expression.ToString());
+
+        /// <summary>
         ///     Converts to anonymousparametersstring.
         /// </summary>
         /// <typeparam name="TResult">The type of the result.</typeparam>
