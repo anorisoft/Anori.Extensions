@@ -53,14 +53,14 @@ var searchModule = function() {
     a(
         {
             id:1,
-            title:"ReferenceTypeExtensions",
-            content:"ReferenceTypeExtensions",
+            title:"EnumerableExtensions",
+            content:"EnumerableExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
-            title:"ReferenceTypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/EnumerableExtensions',
+            title:"EnumerableExtensions",
             description:""
         }
     );
@@ -81,62 +81,6 @@ var searchModule = function() {
     a(
         {
             id:3,
-            title:"IDispatchableContext",
-            content:"IDispatchableContext",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions.Threading/IDispatchableContext',
-            title:"IDispatchableContext",
-            description:""
-        }
-    );
-    a(
-        {
-            id:4,
-            title:"ValueTypeExtensions",
-            content:"ValueTypeExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
-            title:"ValueTypeExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"EventArgs",
-            content:"EventArgs",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/EventArgs_1',
-            title:"EventArgs<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
-            title:"TaskExtensions",
-            content:"TaskExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions/TaskExtensions',
-            title:"TaskExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:7,
             title:"EventHandelExtensions",
             content:"EventHandelExtensions",
             description:'',
@@ -150,21 +94,91 @@ var searchModule = function() {
     );
     a(
         {
-            id:8,
-            title:"EnumerableExtensions",
-            content:"EnumerableExtensions",
+            id:4,
+            title:"StringExtensions",
+            content:"StringExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/EnumerableExtensions',
-            title:"EnumerableExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions/StringExtensions',
+            title:"StringExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"TaskExtensions",
+            content:"TaskExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/TaskExtensions',
+            title:"TaskExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"IDispatchableContext",
+            content:"IDispatchableContext",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions.Threading/IDispatchableContext',
+            title:"IDispatchableContext",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
+            title:"ReferenceTypeExtensions",
+            content:"ReferenceTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ReferenceTypeExtensions',
+            title:"ReferenceTypeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:8,
+            title:"ValueTypeExtensions",
+            content:"ValueTypeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/ValueTypeExtensions',
+            title:"ValueTypeExtensions",
             description:""
         }
     );
     a(
         {
             id:9,
+            title:"EventArgs",
+            content:"EventArgs",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Extensions/api/Anori.Extensions/EventArgs_1',
+            title:"EventArgs<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
             title:"SendFuncState",
             content:"SendFuncState",
             description:'',
@@ -178,29 +192,15 @@ var searchModule = function() {
     );
     a(
         {
-            id:10,
-            title:"DispatchableContextExtensions",
-            content:"DispatchableContextExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Extensions/api/Anori.Extensions.Threading/DispatchableContextExtensions',
-            title:"DispatchableContextExtensions",
-            description:""
-        }
-    );
-    a(
-        {
             id:11,
-            title:"SendFuncState",
-            content:"SendFuncState",
+            title:"TypeExtensions",
+            content:"TypeExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions.Threading/SendFuncState_1',
-            title:"SendFuncState<TResult>",
+            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
+            title:"TypeExtensions",
             description:""
         }
     );
@@ -221,28 +221,28 @@ var searchModule = function() {
     a(
         {
             id:13,
-            title:"StringExtensions",
-            content:"StringExtensions",
+            title:"SendFuncState",
+            content:"SendFuncState",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/StringExtensions',
-            title:"StringExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions.Threading/SendFuncState_1',
+            title:"SendFuncState<TResult>",
             description:""
         }
     );
     a(
         {
             id:14,
-            title:"TypeExtensions",
-            content:"TypeExtensions",
+            title:"DispatchableContextExtensions",
+            content:"DispatchableContextExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Extensions/api/Anori.Extensions/TypeExtensions',
-            title:"TypeExtensions",
+            url:'/Anori.Extensions/api/Anori.Extensions.Threading/DispatchableContextExtensions',
+            title:"DispatchableContextExtensions",
             description:""
         }
     );
