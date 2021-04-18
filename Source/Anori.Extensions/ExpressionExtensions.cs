@@ -13,18 +13,18 @@ namespace Anori.Extensions
     using System.Text;
 
     /// <summary>
-    ///     Expression Extensions.
+    /// The Expression Extensions class.
     /// </summary>
     public static class ExpressionExtensions
-    {
-        /// <summary>
-        /// Converts to anonymousparametersstring.
-        /// </summary>
-        /// <param name="expression">The expression.</param>
-        /// <returns>
-        ///     Result of ToAnonymousParametersString as String.
-        /// </returns>
-        public static string ToAnonymousParametersString(this LambdaExpression expression) =>
+        {
+            /// <summary>
+            ///     Converts to anonymousparametersstring.
+            /// </summary>
+            /// <param name="expression">The expression.</param>
+            /// <returns>
+            ///     Result of ToAnonymousParametersString as String.
+            /// </returns>
+            public static string ToAnonymousParametersString(this LambdaExpression expression) =>
             ReplaceParameters(expression.Parameters, expression.ToString());
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Anori.Extensions
                 {
                     var arg = $"arg{i}";
                     var a = innerExpression.IndexOf(").", start);
-                    var end = innerExpression.IndexOf(".", a + 2);
+                    var end = innerExpression.IndexOfAnyChar(new[] { '.', ')' }, a + 2).index;
                     var str = innerExpression.Substring(start, end - start);
                     Debug.WriteLine($"Str: {str}");
                     Debug.WriteLine($"InnerExpression: {innerExpression}");
