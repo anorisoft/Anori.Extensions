@@ -256,6 +256,15 @@
                 Expression Extensions.
             </summary>
         </member>
+        <member name="M:Anori.Extensions.ExpressionExtensions.ToAnonymousParametersString(System.Linq.Expressions.LambdaExpression)">
+            <summary>
+            Converts to anonymousparametersstring.
+            </summary>
+            <param name="expression">The expression.</param>
+            <returns>
+                Result of ToAnonymousParametersString as String.
+            </returns>
+        </member>
         <member name="M:Anori.Extensions.ExpressionExtensions.ToAnonymousParametersString``1(System.Linq.Expressions.Expression{System.Func{``0}})">
             <summary>
                 Converts to anonymousparametersstring.
